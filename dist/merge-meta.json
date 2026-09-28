@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-09-28T09:42:38Z",
+  "homepage": "https://www.tvbox.org/",
+  "repo": "https://github.com/TVboxorg/TVbox",
+  "primary": "王二小",
+  "sites": 160,
+  "parses": 49,
+  "lives": 24,
+  "sources": [
+    {
+      "id": "pref-001",
+      "name": "王二小",
+      "group": "pref",
+      "url": "https://9280.kstore.vip/newwex.json",
+      "primary": true,
+      "sites_added": 96,
+      "sites_skipped": 0,
+      "spider": "http://oss4liview.moji.com/thd_file/2026/09/24/06cf2230c30d9c26fa46ea79147b330d.jpg"
+    },
+    {
+      "id": "pref-007",
+      "name": "小盒子",
+      "group": "pref",
+      "url": "http://xhztv.top/xhz",
+      "primary": false,
+      "sites_added": 50,
+      "sites_skipped": 4,
+      "spider": "http://xhztv.top/xhz/Yoursmile.jar"
+    },
+    {
+      "id": "pref-006",
+      "name": "俊哥",
+      "group": "pref",
+      "url": "http://home.jundie.top:81/top98.json",
+      "primary": false,
+      "sites_added": 22,
+      "sites_skipped": 2,
+      "spider": "http://home.jundie.top:81/jar/top98_1.jar"
+    },
+    {
+      "id": "back-023",
+      "name": "ok线路1",
+      "group": "back",
+      "url": "https://raw.liucn.cc/box/m.json",
+      "primary": false,
+      "sites_added": 180,
+      "sites_skipped": 54,
+      "spider": "https://raw.liucn.cc/box/fty.jar"
+    },
+    {
+      "id": "back-017",
+      "name": "潇洒",
+      "group": "back",
+      "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
+      "primary": false,
+      "sites_added": 104,
+      "sites_skipped": 0,
+      "spider": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
+    },
+    {
+      "id": "back-018",
+      "name": "牛二",
+      "group": "back",
+      "url": "https://9280.kstore.space/newwex.json",
+      "primary": false,
+      "sites_added": 96,
+      "sites_skipped": 0,
+      "spider": "http://oss4liview.moji.com/thd_file/2026/09/24/06cf2230c30d9c26fa46ea79147b330d.jpg"
+    },
+    {
+      "id": "back-016",
+      "name": "饭太硬",
+      "group": "back",
+      "url": "https://qist.wyfc.qzz.io/fty.json",
+      "primary": false,
+      "sites_added": 44,
+      "sites_skipped": 3,
+      "spider": "https://qist.wyfc.qzz.io/jar/fan.txt"
+    },
+    {
+      "id": "back-012",
+      "name": "二月红接口",
+      "group": "back",
+      "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+      "primary": false,
+      "sites_added": 44,
+      "sites_skipped": 0,
+      "spider": "http://47.120.41.246:8025/vip/jar/lubin.php"
+    },
+    {
+      "id": "back-024",
+      "name": "荐片",
+      "group": "back",
+      "url": "https://tv.203511.xyz/0821.json",
+      "primary": false,
+      "sites_added": 7,
+      "sites_skipped": 21,
+      "spider": "https://tv.203511.xyz/jar/custom_spider.jar"
+    },
+    {
+      "id": "back-025",
+      "name": "my interface",
+      "group": "back",
+      "url": "http://124.223.214.31:8/api.json",
+      "primary": false,
+      "sites_added": 1,
+      "sites_skipped": 1,
+      "spider": "https://gitee.com/starlinkapi/jar/raw/master/jar/spider.jar"
+    }
+  ],
+  "subscribe": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",
+  "subscribe_cdn": "https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/official.json"
+}

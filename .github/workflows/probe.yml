@@ -35,6 +35,9 @@ jobs:
       - name: Build dist
         run: python3 scripts/build.py
 
+      - name: Merge official config
+        run: python3 scripts/merge.py
+
       - name: Commit dist
         run: |
           set -e

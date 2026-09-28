@@ -13,15 +13,19 @@
 
 ## 订阅地址（可直接填入 TVBox）
 
-| 用途 | 地址 |
-| --- | --- |
-| 优选列表（探测可用优先） | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json` |
-| 完整列表（含状态） | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/list.json` |
-| 可读状态表 | [`dist/status.md`](./dist/status.md) |
+| 用途 | 地址 | 填哪里 |
+| --- | --- | --- |
+| **单仓聚合（推荐直用）** | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json` | 「配置地址 / 接口」 |
+| 多仓列表 | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json` | 「多仓 / 仓库」 |
+| 完整列表（含状态） | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/list.json` | 仅查看 |
+| 可读状态表 | [`dist/status.md`](./dist/status.md) | 仅查看 |
 
-国内若 raw 较慢，可尝试镜像（自行替换）：
+`official.json` 会自动拉取探测可用的公开线路，跨源拼合 `sites`（标准 CMS 源直接合并；CSP 源尽量带上原线路 `jar`），生成一份可粘贴进 TVBox 的配置。
+
+国内若 raw 较慢，可尝试镜像：
 
 ```text
+https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/official.json
 https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/tvbox.json
 ```
 
@@ -31,14 +35,17 @@ https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/tvbox.json
 | --- | --- |
 | [`sources.yaml`](./sources.yaml) | 人工维护的接口源（权威数据） |
 | [`dist/`](./dist/) | 探测结果与生成的订阅文件（CI 定时更新） |
+| [`dist/official.json`](./dist/official.json) | 跨线路聚合的单仓配置 |
 | [`scripts/probe.py`](./scripts/probe.py) | 探测脚本 |
 | [`scripts/build.py`](./scripts/build.py) | 生成 list / tvbox / status |
+| [`scripts/merge.py`](./scripts/merge.py) | 跨线路拼 sites → official.json |
 
 ## 本地运行
 
 ```bash
 python3 scripts/probe.py
 python3 scripts/build.py
+python3 scripts/merge.py
 ```
 
 ## 说明与免责
