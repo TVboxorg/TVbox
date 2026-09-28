@@ -1,5 +1,7 @@
 # TVbox — TVBox 接口汇总
 
+**Languages:** **简体中文** | [English](README.en.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+
 > 官网：**[tvbox.org](https://www.tvbox.org/)**  
 > 本仓库由 [TVboxorg](https://github.com/TVboxorg) 维护，用于收集、整理并定期探测可用的 TVBox 接口地址。
 
