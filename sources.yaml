@@ -1,0 +1,269 @@
+# TVBox 接口源清单（人工维护）
+# 官网: https://www.tvbox.org/
+
+sources:
+  - id: pref-001
+    name: 王二小
+    group: pref
+    url: "https://9280.kstore.vip/newwex.json"
+    desc: 混合线路，以网盘(4K)为主，适合网盘VIP用户
+    enabled: true
+
+  - id: pref-002
+    name: 菜妮丝
+    group: pref
+    url: "https://tv.xn--yhqu5zs87a.top"
+    desc: 常规线路，推荐瓜子、金牌等线路
+    enabled: true
+
+  - id: pref-003
+    name: 饭太硬
+    group: pref
+    url: "http://www.饭太硬.net/tv"
+    desc: 混合线路，推荐荐片等线路
+    enabled: true
+
+  - id: pref-004
+    name: 肥猫
+    group: pref
+    url: "http://肥猫.net/"
+    desc: 混合线路，推荐肥猫、瓜子、金牌等线路
+    enabled: true
+
+  - id: pref-005
+    name: 少儿频道
+    group: pref
+    url: "https://jihulab.com/ymz1231/xymz/-/raw/main/ymshaoer"
+    desc: 常规线路，启蒙、少儿、小/初/高
+    enabled: true
+
+  - id: pref-006
+    name: 俊哥
+    group: pref
+    url: "http://home.jundie.top:81/top98.json"
+    desc: 常规线路
+    enabled: true
+
+  - id: pref-007
+    name: 小盒子
+    group: pref
+    url: "http://xhztv.top/xhz"
+    desc: 常规线路
+    enabled: true
+
+  - id: pref-008
+    name: 4k云盘接口
+    group: pref
+    url: "https://9xi4o.tk/0725.json"
+    desc: 混合线路，可用性较差
+    enabled: true
+
+  - id: pref-009
+    name: 无意云
+    group: pref
+    url: "https://ym.wya6.cn/"
+    desc: 混合线路，若不用网盘的话可以选排序靠后的线路，画质较高
+    enabled: true
+
+  - id: pref-010
+    name: 欧歌接口
+    group: pref
+    url: "https://xn--sdds-rp5imh.v.nxog.top/apitv.php?id=3"
+    desc: 常规影视线路
+    enabled: true
+
+  - id: back-011
+    name: 小盒子4K
+    group: back
+    url: "http://xhztv.top/4k.json"
+    desc: 4K高清线路
+    enabled: true
+
+  - id: back-012
+    name: 二月红接口
+    group: back
+    url: "https://700sjro44343.vicp.fun/eggp/0211/tv.json"
+    desc: 综合影视源
+    enabled: true
+
+  - id: back-013
+    name: 欧歌免费
+    group: back
+    url: "https://tv.nxog.top/m/111.php?ou=公众号欧歌app&mz=index&jar=index&123&b=tv"
+    desc: 欧歌免费公用线路
+    enabled: true
+
+  - id: back-014
+    name: 王二小接口
+    group: back
+    url: "http://tvbox.xn--4kq62z5rby2qupq9ub.top/"
+    desc: 王二小备用线路
+    enabled: true
+
+  - id: back-015
+    name: 王二小放牛娃
+    group: back
+    url: "http://tv.999888987.xyz"
+    desc: 王二小网盘备用源
+    enabled: true
+
+  - id: back-016
+    name: 饭太硬
+    group: back
+    url: "https://qist.wyfc.qzz.io/fty.json"
+    desc: 混合线路，推荐荐片等线路
+    enabled: true
+
+  - id: back-017
+    name: 潇洒
+    group: back
+    url: "https://qist.wyfc.qzz.io/xiaosa/api.json"
+    desc: 综合高清线路
+    enabled: true
+
+  - id: back-018
+    name: 牛二
+    group: back
+    url: "https://9280.kstore.space/newwex.json"
+    desc: 网盘4K混合线路
+    enabled: true
+
+  - id: back-019
+    name: uuccc
+    group: back
+    url: "http://xn--5mqx81b535a.com/"
+    desc: 通用影视线路
+    enabled: true
+
+  - id: back-020
+    name: fmys
+    group: back
+    url: "http://fmys.top/fmys.json"
+    desc: 综合聚合线路
+    enabled: true
+
+  - id: back-021
+    name: 饭太硬备用
+    group: back
+    url: "https://fty.888484.xyz/tv"
+    desc: 饭太硬备用访问地址
+    enabled: true
+
+  - id: back-022
+    name: 新接口
+    group: back
+    url: "https://www.iyouhun.com/tv/wex"
+    desc: 全新综合聚合源
+    enabled: true
+
+  - id: back-023
+    name: ok线路1
+    group: back
+    url: "https://raw.liucn.cc/box/m.json"
+    desc: 稳定通用影视源
+    enabled: true
+
+  - id: back-024
+    name: 荐片
+    group: back
+    url: "https://tv.203511.xyz/0821.json"
+    desc: 荐片高清专用线路
+    enabled: true
+
+  - id: back-025
+    name: my interface
+    group: back
+    url: "http://124.223.214.31:8/api.json"
+    desc: 自建本地接口源
+    enabled: true
+
+  - id: back-026
+    name: 1号VIP源
+    group: back
+    url: "https://700sjro44343.vicp.fun/vip/vip/tv.json"
+    desc: VIP付费影视线路
+    enabled: true
+
+  - id: back-027
+    name: 软件内置源
+    group: back
+    url: "http://47.96.82.41:5188/api.json"
+    desc: 本地端口服务接口
+    enabled: true
+
+  - id: back-028
+    name: ok线路2
+    group: back
+    url: "https://gist.githubusercontent.com/ph7368/20ee6c7b64d77d82f8f4162cdd04ad61/raw/gistfile1.txt"
+    desc: Gist托管备用源
+    enabled: true
+
+  - id: back-029
+    name: 11号托管源
+    group: back
+    url: "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json"
+    desc: Github静态加速源
+    enabled: true
+
+  - id: back-030
+    name: 摸鱼儿
+    group: back
+    url: "https://6800.kstore.vip/fish.json"
+    desc: 鱼影视专用线路
+    enabled: true
+
+  - id: back-031
+    name: sss公用源
+    group: back
+    url: "http://www.xn--sss604efuw.net/tv"
+    desc: 长期稳定通用线路
+    enabled: true
+
+  - id: back-032
+    name: 牛儿
+    group: back
+    url: "https://9280.kstore.space/wex.json"
+    desc: 牛二同站备用wex源
+    enabled: true
+
+  - id: back-033
+    name: 拾光
+    group: back
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json"
+    desc: SVIP高清影视托管源
+    enabled: true
+
+  - id: back-034
+    name: 神秘大佬
+    group: back
+    url: "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json"
+    desc: Github加速聚合综合源
+    enabled: true
+
+  - id: back-035
+    name: 潇洒Github备用
+    group: back
+    url: "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json"
+    desc: 潇洒线路镜像加速地址
+    enabled: true
+
+  - id: back-036
+    name: 小苹果线路
+    group: back
+    url: "https://bitbucket.org/xduo/duoapi/raw/master/xpg.json"
+    desc: Bitbucket托管苹果影视源
+    enabled: true
+
+  - id: back-037
+    name: 66号GitCode源
+    group: back
+    url: "https://raw.gitcode.com/jvftibcs-jbduyh/021/raw/main/18.json"
+    desc: 国内Gitee类静态影视接口
+    enabled: true
+
+  - id: back-038
+    name: 金鹰
+    group: back
+    url: "http://550.3vcn.work/wdjyys.json"
+    desc: 金鹰影视专用聚合线路
+    enabled: true
