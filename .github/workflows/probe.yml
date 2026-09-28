@@ -12,7 +12,7 @@ on:
 
 concurrency:
   group: probe-interfaces
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -37,6 +37,7 @@ jobs:
 
       - name: Commit dist
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add dist/
@@ -46,11 +47,17 @@ jobs:
           fi
           git commit -m "chore: update probe results"
           for i in 1 2 3 4 5; do
-            if git push; then
+            if git push origin HEAD:main; then
               exit 0
             fi
-            echo "Push rejected, rebase and retry ($i/5)..."
-            git pull --rebase origin HEAD
+            echo "Push rejected, rebase keeping local dist ($i/5)..."
+            git fetch origin main
+            if ! git rebase origin/main; then
+              # Generated artifacts: keep this run's dist over remote.
+              git checkout --theirs -- dist/
+              git add dist/
+              GIT_EDITOR=true git rebase --continue
+            fi
             sleep $((i * 2))
           done
           echo "Failed to push after retries"
