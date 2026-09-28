@@ -10,6 +10,10 @@ on:
       - "scripts/**"
       - ".github/workflows/probe.yml"
 
+concurrency:
+  group: probe-interfaces
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -18,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -36,7 +42,16 @@ jobs:
           git add dist/
           if git diff --staged --quiet; then
             echo "No dist changes"
-          else
-            git commit -m "chore: update probe results"
-            git push
+            exit 0
           fi
+          git commit -m "chore: update probe results"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected, rebase and retry ($i/5)..."
+            git pull --rebase origin HEAD
+            sleep $((i * 2))
+          done
+          echo "Failed to push after retries"
+          exit 1
