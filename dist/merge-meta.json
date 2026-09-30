@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T11:45:45Z",
+  "generated_at": "2026-09-30T17:25:46Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -82,16 +82,6 @@
       "name": "二月红接口",
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
-      "primary": false,
-      "sites_added": 44,
-      "sites_skipped": 0,
-      "spider": "http://47.120.41.246:8025/vip/jar/lubin.php"
-    },
-    {
-      "id": "back-026",
-      "name": "1号VIP源",
-      "group": "back",
-      "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
       "primary": false,
       "sites_added": 44,
       "sites_skipped": 0,
