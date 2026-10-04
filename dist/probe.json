@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T11:39:27Z",
+  "generated_at": "2026-10-04T16:18:19Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "count": 38,
@@ -13,7 +13,7 @@
       "desc": "混合线路，以网盘(4K)为主，适合网盘VIP用户",
       "ok": true,
       "status": 200,
-      "ms": 836,
+      "ms": 667,
       "kind": "ok",
       "error": ""
     },
@@ -25,7 +25,7 @@
       "desc": "常规线路，推荐瓜子、金牌等线路",
       "ok": false,
       "status": 200,
-      "ms": 293,
+      "ms": 289,
       "kind": "suspect",
       "error": ""
     },
@@ -61,7 +61,7 @@
       "desc": "常规线路，启蒙、少儿、小/初/高",
       "ok": false,
       "status": 200,
-      "ms": 1041,
+      "ms": 806,
       "kind": "suspect",
       "error": ""
     },
@@ -73,7 +73,7 @@
       "desc": "常规线路",
       "ok": true,
       "status": 200,
-      "ms": 2868,
+      "ms": 2124,
       "kind": "ok",
       "error": ""
     },
@@ -85,7 +85,7 @@
       "desc": "常规线路",
       "ok": true,
       "status": 200,
-      "ms": 364,
+      "ms": 368,
       "kind": "ok",
       "error": ""
     },
@@ -97,7 +97,7 @@
       "desc": "混合线路，可用性较差",
       "ok": false,
       "status": 0,
-      "ms": 340,
+      "ms": 116,
       "kind": "error",
       "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
     },
@@ -109,7 +109,7 @@
       "desc": "混合线路，若不用网盘的话可以选排序靠后的线路，画质较高",
       "ok": false,
       "status": 0,
-      "ms": 861,
+      "ms": 934,
       "kind": "error",
       "error": "HTTPError: HTTP Error 456: "
     },
@@ -121,7 +121,7 @@
       "desc": "常规影视线路",
       "ok": false,
       "status": 0,
-      "ms": 41,
+      "ms": 52,
       "kind": "error",
       "error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)>"
     },
@@ -133,7 +133,7 @@
       "desc": "4K高清线路",
       "ok": true,
       "status": 200,
-      "ms": 190,
+      "ms": 215,
       "kind": "ok",
       "error": ""
     },
@@ -145,7 +145,7 @@
       "desc": "综合影视源",
       "ok": true,
       "status": 200,
-      "ms": 2104,
+      "ms": 2105,
       "kind": "ok",
       "error": ""
     },
@@ -169,7 +169,7 @@
       "desc": "王二小备用线路",
       "ok": false,
       "status": 0,
-      "ms": 12187,
+      "ms": 12237,
       "kind": "error",
       "error": "TimeoutError: timed out"
     },
@@ -181,9 +181,9 @@
       "desc": "王二小网盘备用源",
       "ok": false,
       "status": 0,
-      "ms": 12223,
+      "ms": 5077,
       "kind": "error",
-      "error": "TimeoutError: timed out"
+      "error": "ConnectionResetError: [Errno 104] Connection reset by peer"
     },
     {
       "id": "back-016",
@@ -193,7 +193,7 @@
       "desc": "混合线路，推荐荐片等线路",
       "ok": true,
       "status": 200,
-      "ms": 150,
+      "ms": 280,
       "kind": "ok",
       "error": ""
     },
@@ -205,7 +205,7 @@
       "desc": "综合高清线路",
       "ok": true,
       "status": 200,
-      "ms": 70,
+      "ms": 66,
       "kind": "ok",
       "error": ""
     },
@@ -217,7 +217,7 @@
       "desc": "网盘4K混合线路",
       "ok": true,
       "status": 200,
-      "ms": 637,
+      "ms": 787,
       "kind": "ok",
       "error": ""
     },
@@ -229,7 +229,7 @@
       "desc": "通用影视线路",
       "ok": false,
       "status": 200,
-      "ms": 1552,
+      "ms": 1540,
       "kind": "suspect",
       "error": ""
     },
@@ -253,7 +253,7 @@
       "desc": "饭太硬备用访问地址",
       "ok": false,
       "status": 200,
-      "ms": 930,
+      "ms": 821,
       "kind": "suspect",
       "error": ""
     },
@@ -265,7 +265,7 @@
       "desc": "全新综合聚合源",
       "ok": false,
       "status": 200,
-      "ms": 1957,
+      "ms": 1927,
       "kind": "suspect",
       "error": ""
     },
@@ -277,7 +277,7 @@
       "desc": "稳定通用影视源",
       "ok": true,
       "status": 200,
-      "ms": 364,
+      "ms": 290,
       "kind": "ok",
       "error": ""
     },
@@ -289,7 +289,7 @@
       "desc": "荐片高清专用线路",
       "ok": true,
       "status": 200,
-      "ms": 99,
+      "ms": 106,
       "kind": "ok",
       "error": ""
     },
@@ -301,7 +301,7 @@
       "desc": "自建本地接口源",
       "ok": true,
       "status": 200,
-      "ms": 1494,
+      "ms": 2573,
       "kind": "ok",
       "error": ""
     },
@@ -313,7 +313,7 @@
       "desc": "VIP付费影视线路",
       "ok": true,
       "status": 200,
-      "ms": 2138,
+      "ms": 2066,
       "kind": "ok",
       "error": ""
     },
@@ -325,7 +325,7 @@
       "desc": "本地端口服务接口",
       "ok": true,
       "status": 200,
-      "ms": 737,
+      "ms": 762,
       "kind": "ok",
       "error": ""
     },
@@ -337,7 +337,7 @@
       "desc": "Gist托管备用源",
       "ok": true,
       "status": 200,
-      "ms": 100,
+      "ms": 91,
       "kind": "ok",
       "error": ""
     },
@@ -349,7 +349,7 @@
       "desc": "Github静态加速源",
       "ok": true,
       "status": 200,
-      "ms": 38,
+      "ms": 51,
       "kind": "ok",
       "error": ""
     },
@@ -361,7 +361,7 @@
       "desc": "鱼影视专用线路",
       "ok": false,
       "status": 0,
-      "ms": 537,
+      "ms": 530,
       "kind": "error",
       "error": "HTTPError: HTTP Error 401: "
     },
@@ -373,7 +373,7 @@
       "desc": "长期稳定通用线路",
       "ok": false,
       "status": 200,
-      "ms": 709,
+      "ms": 674,
       "kind": "suspect",
       "error": ""
     },
@@ -385,7 +385,7 @@
       "desc": "牛二同站备用wex源",
       "ok": true,
       "status": 200,
-      "ms": 575,
+      "ms": 566,
       "kind": "ok",
       "error": ""
     },
@@ -397,7 +397,7 @@
       "desc": "SVIP高清影视托管源",
       "ok": true,
       "status": 200,
-      "ms": 162,
+      "ms": 155,
       "kind": "text",
       "error": ""
     },
@@ -409,7 +409,7 @@
       "desc": "Github加速聚合综合源",
       "ok": true,
       "status": 200,
-      "ms": 128,
+      "ms": 349,
       "kind": "ok",
       "error": ""
     },
@@ -421,7 +421,7 @@
       "desc": "潇洒线路镜像加速地址",
       "ok": true,
       "status": 200,
-      "ms": 113,
+      "ms": 128,
       "kind": "ok",
       "error": ""
     },
@@ -433,7 +433,7 @@
       "desc": "Bitbucket托管苹果影视源",
       "ok": false,
       "status": 0,
-      "ms": 74,
+      "ms": 255,
       "kind": "error",
       "error": "HTTPError: HTTP Error 404: Not Found"
     },
@@ -445,7 +445,7 @@
       "desc": "国内Gitee类静态影视接口",
       "ok": false,
       "status": 0,
-      "ms": 3972,
+      "ms": 2101,
       "kind": "error",
       "error": "HTTPError: HTTP Error 418: "
     },
@@ -457,7 +457,7 @@
       "desc": "金鹰影视专用聚合线路",
       "ok": true,
       "status": 200,
-      "ms": 1577,
+      "ms": 3001,
       "kind": "ok",
       "error": ""
     }
