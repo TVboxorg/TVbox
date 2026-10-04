@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T03:47:36Z",
+  "generated_at": "2026-10-04T11:39:36Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -73,7 +73,7 @@
       "group": "back",
       "url": "https://qist.wyfc.qzz.io/fty.json",
       "primary": false,
-      "sites_added": 44,
+      "sites_added": 45,
       "sites_skipped": 3,
       "spider": "https://qist.wyfc.qzz.io/jar/fan.txt"
     },
