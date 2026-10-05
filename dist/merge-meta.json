@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T13:18:35Z",
+  "generated_at": "2026-10-05T23:35:30Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -105,7 +105,7 @@
       "primary": false,
       "sites_added": 1,
       "sites_skipped": 1,
-      "spider": "https://gitee.com/starlinkapi/jar/raw/master/jar/spider.jar"
+      "spider": "https://gitee.com/starlinkapi/jar/raw/master/jar/pg.jar"
     }
   ],
   "subscribe": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",
