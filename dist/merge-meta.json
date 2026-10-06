@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-06T04:19:42Z",
+  "generated_at": "2026-10-06T12:35:33Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
   "sites": 160,
-  "parses": 49,
-  "lives": 24,
+  "parses": 38,
+  "lives": 23,
   "sources": [
     {
       "id": "pref-001",
@@ -26,16 +26,6 @@
       "sites_added": 50,
       "sites_skipped": 4,
       "spider": "http://xhztv.top/xhz/Yoursmile.jar"
-    },
-    {
-      "id": "pref-006",
-      "name": "俊哥",
-      "group": "pref",
-      "url": "http://home.jundie.top:81/top98.json",
-      "primary": false,
-      "sites_added": 22,
-      "sites_skipped": 2,
-      "spider": "http://home.jundie.top:81/jar/top98_1.jar"
     },
     {
       "id": "back-023",
@@ -88,16 +78,6 @@
       "spider": "http://47.120.41.246:8025/vip/jar/lubin.php"
     },
     {
-      "id": "back-026",
-      "name": "1号VIP源",
-      "group": "back",
-      "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
-      "primary": false,
-      "sites_added": 40,
-      "sites_skipped": 0,
-      "spider": "http://47.120.41.246:8025/vip/jar/lubin.php"
-    },
-    {
       "id": "back-024",
       "name": "荐片",
       "group": "back",
@@ -115,7 +95,7 @@
       "primary": false,
       "sites_added": 1,
       "sites_skipped": 1,
-      "spider": "https://gitee.com/starlinkapi/jar/raw/master/jar/pg.jar"
+      "spider": "https://gitee.com/starlinkapi/jar/raw/master/jar/starlink.jar"
     }
   ],
   "subscribe": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",
