@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T03:59:13Z",
+  "generated_at": "2026-10-08T12:37:58Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -53,7 +53,7 @@
       "group": "back",
       "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
       "primary": false,
-      "sites_added": 103,
+      "sites_added": 107,
       "sites_skipped": 0,
       "spider": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
