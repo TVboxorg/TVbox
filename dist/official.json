@@ -1251,6 +1251,42 @@
       ]
     },
     {
+      "key": "tv_back-026_feifan",
+      "name": "🍀┃非凡┃资源·1号VIP源",
+      "type": 1,
+      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "categories": [
+        "韩国剧",
+        "欧美剧",
+        "台湾剧",
+        "战争片",
+        "国产剧",
+        "大陆综艺"
+      ],
+      "hide": 1
+    },
+    {
+      "key": "tv_back-026_ruyi",
+      "name": "🍀┃如意┃资源·1号VIP源",
+      "type": 1,
+      "api": "https://cj.rycjapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "categories": [
+        "韩国剧",
+        "欧美剧",
+        "台湾剧",
+        "战争片",
+        "国产剧",
+        "大陆综艺"
+      ],
+      "hide": 1
+    },
+    {
       "key": "tv_back-023_csp_小胡",
       "name": "👒┃小胡┃资源┃·ok线路1",
       "type": 1,
@@ -1480,40 +1516,40 @@
       "filterable": 1
     },
     {
-      "key": "tv_back-012_feifan",
-      "name": "🍀┃非凡┃资源·二月红接口",
-      "type": 1,
-      "api": "http://ffzy5.tv/api.php/provide/vod",
+      "key": "tv_back-026_至臻",
+      "name": "💖┃至臻┃4K💖·1号VIP源",
+      "type": 3,
+      "api": "csp_PanWebShare",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "categories": [
-        "韩国剧",
-        "欧美剧",
-        "台湾剧",
-        "战争片",
-        "国产剧",
-        "大陆综艺"
-      ],
-      "hide": 1
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "http://103.231.12.104:22776"
+        ]
+      },
+      "hide": 1,
+      "jar": "http://47.120.41.246:8025/vip/jar/lubin.php"
     },
     {
-      "key": "tv_back-012_ruyi",
-      "name": "🍀┃如意┃资源·二月红接口",
-      "type": 1,
-      "api": "https://cj.rycjapi.com/api.php/provide/vod",
+      "key": "tv_back-026_玩偶哥哥",
+      "name": "💖┃玩偶┃4K💖·1号VIP源",
+      "type": 3,
+      "api": "csp_Wogg",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "categories": [
-        "韩国剧",
-        "欧美剧",
-        "台湾剧",
-        "战争片",
-        "国产剧",
-        "大陆综艺"
-      ],
-      "hide": 1
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "https://www.wogg.net",
+          "https://wogg.xxooo.cf",
+          "https://woggpan.xxooo.cf"
+        ]
+      },
+      "hide": 1,
+      "jar": "http://47.120.41.246:8025/vip/jar/lubin.php"
     },
     {
       "key": "tv_back-023_taopian",
@@ -1635,44 +1671,6 @@
       "api": "https://api.apibdzy.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
       "filterable": 0
-    },
-    {
-      "key": "tv_back-017_玩偶",
-      "name": "玩偶 • 4K·潇洒",
-      "type": 3,
-      "api": "csp_Wogg",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "ext": {
-        "site": [
-          "https://www.wogg.live",
-          "https://woggpan.888484.xyz",
-          "https://wogg.xxooo.cf",
-          "https://woggpan.xxooo.cf"
-        ]
-      },
-      "timeout": 60,
-      "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
-    },
-    {
-      "key": "tv_back-017_快映",
-      "name": "快映 • 4K·潇洒",
-      "type": 3,
-      "api": "csp_PanWebShare",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "ext": {
-        "site": [
-          "http://xsayang.fun",
-          "http://38.76.197.172:12521"
-        ]
-      },
-      "timeout": 60,
-      "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
     {
       "key": "tv_back-017_花卷",
@@ -1885,6 +1883,27 @@
       "jar": "http://home.jundie.top:81/jar/top98_1.jar"
     },
     {
+      "key": "tv_back-026_夸父",
+      "name": "💖┃夸父┃4K💖·1号VIP源",
+      "type": 3,
+      "api": "csp_PanWebShareKF",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "style": {
+        "type": "list",
+        "ratio": 1.433
+      },
+      "ext": {
+        "site": [
+          "https://www.kfzys.net"
+        ],
+        "cookie": "bbs_sid=p5mugcm9r147o1d3qpi0su1ucm; bbs_token=gDMAOehNUQetTJv9Lnet0J_2FGJmgdvnx90iTZqzU_2FnO0_3D"
+      },
+      "hide": 1,
+      "jar": "http://47.120.41.246:8025/vip/jar/lubin.php"
+    },
+    {
       "key": "tv_back-017_种子",
       "name": "种子 • 4K·潇洒",
       "type": 3,
@@ -1945,27 +1964,6 @@
       "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
     {
-      "key": "tv_back-012_夸父",
-      "name": "💖┃夸父┃4K💖·二月红接口",
-      "type": 3,
-      "api": "csp_PanWebShareKF",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "style": {
-        "type": "list",
-        "ratio": 1.433
-      },
-      "ext": {
-        "site": [
-          "https://www.kfzys.net"
-        ],
-        "cookie": "bbs_sid=p5mugcm9r147o1d3qpi0su1ucm; bbs_token=gDMAOehNUQetTJv9Lnet0J_2FGJmgdvnx90iTZqzU_2FnO0_3D"
-      },
-      "hide": 1,
-      "jar": "http://47.120.41.246:8025/vip/jar/lubin.php"
-    },
-    {
       "key": "tv_back-023_暴风采集",
       "name": "🌪️暴风影音·ok线路1",
       "type": 1,
@@ -1996,18 +1994,26 @@
       ]
     },
     {
-      "key": "tv_back-023_米搜",
-      "name": "🦋┃米盘┃搜搜·ok线路1",
+      "key": "tv_back-026_华谊",
+      "name": "🍁┃华谊┃APP·1号VIP源",
       "type": 3,
-      "api": "csp_MIPanSo",
+      "api": "csp_AppDrama",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 0,
+      "filterable": 1,
       "ext": {
-        "Cloud-drive": "tvfan/Cloud-drive.txt",
-        "from": "4k|auto"
+        "appName": "华谊",
+        "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp9Ek4wIlQAtwFnuBRlsFiow2tr+4UOciGeNKbY7nL74etUqUb6fvpOSOHhFEfaWlfwUpOB17x3JEL3No19nfjCeVYrYPjlJcgoqUWH/tfIfFAQWvtxBIBlKazkhw8d3ChysWmeWRikKqkBsVRY4oqNPuj4sjm6Zult0U4I4prRQIDAQAB",
+        "dataKey": "NDBYSZR1DMRRZ05NSUCWEJNIYWLBPT0=",
+        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+        "pkg": "com.muyue.tool",
+        "host": "",
+        "site": "https://vip.123pan.cn/1851089669/oss/az5.txt",
+        "version": "1.0.0.4",
+        "decrypt": "1"
       },
-      "jar": "https://raw.liucn.cc/box/fty.jar"
+      "hide": 1,
+      "jar": "http://47.120.41.246:8025/vip/jar/lubin.php"
     }
   ],
   "parses": [
