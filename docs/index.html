@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="TVBox.org — 电视盒子开源官网。开源接口汇总、可用性探测与盒子软件入口。" />
+  <meta name="theme-color" content="#e8eef5" />
+  <title>TVBox.org — 电视盒子开源官网</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="./fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="TVBox.org 首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+            <rect x="2" y="4" width="28" height="20" rx="3" stroke="currentColor" stroke-width="2" />
+            <path d="M13 10.5v9l8-4.5-8-4.5Z" fill="currentColor" />
+            <path d="M10 28h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="brand-text">TVBox<span class="brand-dot">.org</span></span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#subscribe">接口</a>
+        <a href="#software">软件</a>
+        <a href="https://www.tvbox.org/portal.php" rel="noopener">社区</a>
+        <a class="nav-github" href="https://github.com/TVboxorg/TVbox" rel="noopener">GitHub</a>
+      </nav>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="切换深色模式" title="切换深色模式">
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="hero-screen" viewBox="0 0 1200 720" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="bezel" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1a2433" />
+              <stop offset="100%" stop-color="#0d141f" />
+            </linearGradient>
+            <linearGradient id="glass" x1="0.2" y1="0" x2="0.8" y2="1">
+              <stop offset="0%" stop-color="#16324f" />
+              <stop offset="55%" stop-color="#0b1c2e" />
+              <stop offset="100%" stop-color="#07111c" />
+            </linearGradient>
+            <radialGradient id="glow" cx="50%" cy="42%" r="45%">
+              <stop offset="0%" stop-color="#3db8c5" stop-opacity="0.45" />
+              <stop offset="55%" stop-color="#1a6f8a" stop-opacity="0.18" />
+              <stop offset="100%" stop-color="#0b1c2e" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <rect width="1200" height="720" fill="url(#bezel)" />
+          <rect x="48" y="36" width="1104" height="580" rx="18" fill="url(#glass)" />
+          <rect x="48" y="36" width="1104" height="580" rx="18" fill="url(#glow)" class="screen-glow" />
+          <g class="screen-copy" fill="#e8f4f7">
+            <text x="600" y="290" text-anchor="middle" font-family="Outfit, sans-serif" font-size="92" font-weight="800">TVBox</text>
+            <text x="600" y="350" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="28" fill="#8eb8c4">开源 · 接口 · 软件</text>
+          </g>
+          <rect x="520" y="660" width="160" height="18" rx="4" fill="#2a3545" />
+          <rect x="420" y="690" width="360" height="10" rx="3" fill="#1c2533" />
+        </svg>
+        <div class="hero-veil"></div>
+      </div>
+
+      <div class="shell hero-content">
+        <p class="brand-lockup">TVBox.org</p>
+        <h1 id="hero-title">电视盒子开源官网</h1>
+        <p class="hero-lead">开源接口、盒子软件与社区入口，公开整理、定期探测可用性。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#subscribe">获取开源接口</a>
+          <a class="btn btn-secondary" href="#software">浏览软件</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section subscribe" id="subscribe" aria-labelledby="subscribe-title">
+      <div class="shell">
+        <h2 id="subscribe-title">订阅地址</h2>
+        <p class="section-lead">复制后填入 TVBox「配置地址 / 接口」。国内访问 raw 较慢时可用镜像。</p>
+
+        <div class="feed-list" role="list">
+          <article class="feed" role="listitem">
+            <div class="feed-meta">
+              <h3>单仓聚合（推荐）</h3>
+              <p>跨线路拼合可用站点，可直接粘贴使用。</p>
+            </div>
+            <div class="feed-row">
+              <code class="feed-url" id="urlOfficial">https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json</code>
+              <button type="button" class="btn btn-copy" data-copy="#urlOfficial">复制</button>
+            </div>
+            <p class="feed-mirror">镜像：<code>https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/official.json</code></p>
+          </article>
+
+          <article class="feed" role="listitem">
+            <div class="feed-meta">
+              <h3>多仓列表</h3>
+              <p>用于「多仓 / 仓库」模式，按线路切换。</p>
+            </div>
+            <div class="feed-row">
+              <code class="feed-url" id="urlTvbox">https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json</code>
+              <button type="button" class="btn btn-copy" data-copy="#urlTvbox">复制</button>
+            </div>
+            <p class="feed-mirror">镜像：<code>https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/tvbox.json</code></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pillars" aria-labelledby="pillars-title">
+      <div class="shell">
+        <h2 id="pillars-title">官网提供什么</h2>
+        <p class="section-lead">聚焦接口汇总与探测，不托管、不分发影视内容。</p>
+        <ul class="pillar-grid">
+          <li>
+            <h3>公开接口清单</h3>
+            <p>人工维护来源，生成可订阅的单仓与多仓配置。</p>
+          </li>
+          <li>
+            <h3>定期可用性探测</h3>
+            <p>CI 定时探测连通性与格式，结果写入仓库 <code>dist/</code>。</p>
+          </li>
+          <li>
+            <h3>开源可审计</h3>
+            <p>脚本与数据均在 GitHub，变更记录可追溯。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section software" id="software" aria-labelledby="software-title">
+      <div class="shell">
+        <h2 id="software-title">盒子软件</h2>
+        <p class="section-lead">请通过社区与开源仓库获取客户端；本站只提供接口与说明入口。</p>
+        <div class="software-actions">
+          <a class="btn btn-primary" href="https://www.tvbox.org/portal.php" rel="noopener">进入社区论坛</a>
+          <a class="btn btn-secondary" href="https://github.com/TVboxorg/TVbox" rel="noopener">查看接口仓库</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section note" aria-labelledby="note-title">
+      <div class="shell">
+        <h2 id="note-title">使用说明</h2>
+        <p class="section-lead">接口由第三方维护，可用性会变化；探测结果仅供参考。请遵守当地法律法规与平台条款。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p><strong>TVBox.org</strong> · 电视盒子开源官网</p>
+      <p>
+        <a href="https://github.com/TVboxorg/TVbox" rel="noopener">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.tvbox.org/portal.php" rel="noopener">社区</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/TVboxorg/TVbox/blob/main/dist/status.md" rel="noopener">探测状态</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>已复制</div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
