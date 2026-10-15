@@ -33,10 +33,6 @@
       "name": "牛二"
     },
     {
-      "url": "https://fty.888484.xyz/tv",
-      "name": "饭太硬备用"
-    },
-    {
       "url": "https://raw.liucn.cc/box/m.json",
       "name": "ok线路1"
     },
@@ -69,6 +65,10 @@
       "name": "牛儿"
     },
     {
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/xmbjm/svip/refs/heads/main/svip.json",
+      "name": "拾光"
+    },
+    {
       "url": "https://g.33445500.xyz/https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/jsm.json",
       "name": "神秘大佬"
     },
@@ -82,5 +82,5 @@
     }
   ],
   "homepage": "https://www.tvbox.org/",
-  "generated_at": "2026-10-14T21:11:58Z"
+  "generated_at": "2026-10-15T02:45:15Z"
 }
