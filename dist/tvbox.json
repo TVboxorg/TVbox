@@ -17,8 +17,12 @@
       "name": "二月红接口"
     },
     {
-      "url": "https://fty.888484.xyz/tv",
-      "name": "饭太硬备用"
+      "url": "https://qist.wyfc.qzz.io/fty.json",
+      "name": "饭太硬"
+    },
+    {
+      "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
+      "name": "潇洒"
     },
     {
       "url": "https://raw.liucn.cc/box/m.json",
@@ -49,10 +53,6 @@
       "name": "11号托管源"
     },
     {
-      "url": "http://www.xn--sss604efuw.net/tv",
-      "name": "sss公用源"
-    },
-    {
       "url": "https://9280.kstore.space/wex.json",
       "name": "牛儿"
     },
@@ -74,5 +74,5 @@
     }
   ],
   "homepage": "https://www.tvbox.org/",
-  "generated_at": "2026-10-15T16:08:26Z"
+  "generated_at": "2026-10-15T20:50:22Z"
 }

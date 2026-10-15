@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-15T16:08:39Z",
+  "generated_at": "2026-10-15T20:50:28Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "小盒子",
-  "sites": 147,
+  "sites": 160,
   "parses": 46,
-  "lives": 19,
+  "lives": 23,
   "sources": [
     {
       "id": "pref-007",
@@ -38,14 +38,14 @@
       "spider": "https://raw.liucn.cc/box/fty.jar"
     },
     {
-      "id": "back-029",
-      "name": "11号托管源",
+      "id": "back-017",
+      "name": "潇洒",
       "group": "back",
-      "url": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/m.json",
+      "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
       "primary": false,
-      "sites_added": 180,
-      "sites_skipped": 54,
-      "spider": "https://cdn.jsdelivr.net/gh/liu673cn/box@main/fty.jar"
+      "sites_added": 107,
+      "sites_skipped": 0,
+      "spider": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
     {
       "id": "back-027",
@@ -56,6 +56,16 @@
       "sites_added": 77,
       "sites_skipped": 13,
       "spider": "http://124.223.214.31:8/spider.jar"
+    },
+    {
+      "id": "back-016",
+      "name": "饭太硬",
+      "group": "back",
+      "url": "https://qist.wyfc.qzz.io/fty.json",
+      "primary": false,
+      "sites_added": 45,
+      "sites_skipped": 3,
+      "spider": "https://qist.wyfc.qzz.io/jar/fan.txt"
     },
     {
       "id": "back-012",
