@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T15:55:18Z",
+  "generated_at": "2026-10-16T20:23:31Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -15,7 +15,7 @@
       "primary": true,
       "sites_added": 99,
       "sites_skipped": 0,
-      "spider": "http://oss4liview.moji.com/thd_file/2026/10/15/3c42bc0af40a47993c3e59bed0028562.jpg"
+      "spider": "http://oss4liview.moji.com/thd_file/2026/10/17/5e08f8d3205a77afbac8474bb5982bfe.jpg"
     },
     {
       "id": "pref-007",
@@ -65,7 +65,7 @@
       "primary": false,
       "sites_added": 99,
       "sites_skipped": 0,
-      "spider": "http://oss4liview.moji.com/thd_file/2026/10/15/3c42bc0af40a47993c3e59bed0028562.jpg"
+      "spider": "http://oss4liview.moji.com/thd_file/2026/10/17/5e08f8d3205a77afbac8474bb5982bfe.jpg"
     },
     {
       "id": "back-016",
@@ -82,6 +82,16 @@
       "name": "二月红接口",
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
+      "primary": false,
+      "sites_added": 40,
+      "sites_skipped": 0,
+      "spider": "http://47.120.41.246:8025/vip/jar/lubin.php"
+    },
+    {
+      "id": "back-026",
+      "name": "1号VIP源",
+      "group": "back",
+      "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
       "primary": false,
       "sites_added": 40,
       "sites_skipped": 0,
