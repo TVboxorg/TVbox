@@ -1,20 +1,30 @@
 {
-  "generated_at": "2026-10-15T20:50:28Z",
+  "generated_at": "2026-10-16T02:41:46Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
-  "primary": "小盒子",
+  "primary": "王二小",
   "sites": 160,
-  "parses": 46,
-  "lives": 23,
+  "parses": 49,
+  "lives": 24,
   "sources": [
+    {
+      "id": "pref-001",
+      "name": "王二小",
+      "group": "pref",
+      "url": "https://9280.kstore.vip/newwex.json",
+      "primary": true,
+      "sites_added": 99,
+      "sites_skipped": 0,
+      "spider": "http://oss4liview.moji.com/thd_file/2026/10/15/3c42bc0af40a47993c3e59bed0028562.jpg"
+    },
     {
       "id": "pref-007",
       "name": "小盒子",
       "group": "pref",
       "url": "http://xhztv.top/xhz",
-      "primary": true,
-      "sites_added": 54,
-      "sites_skipped": 0,
+      "primary": false,
+      "sites_added": 50,
+      "sites_skipped": 4,
       "spider": "http://xhztv.top/xhz/Yoursmile.jar"
     },
     {
@@ -48,14 +58,14 @@
       "spider": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
     {
-      "id": "back-027",
-      "name": "软件内置源",
+      "id": "back-018",
+      "name": "牛二",
       "group": "back",
-      "url": "http://47.96.82.41:5188/api.json",
+      "url": "https://9280.kstore.space/newwex.json",
       "primary": false,
-      "sites_added": 77,
-      "sites_skipped": 13,
-      "spider": "http://124.223.214.31:8/spider.jar"
+      "sites_added": 99,
+      "sites_skipped": 0,
+      "spider": "http://oss4liview.moji.com/thd_file/2026/10/15/3c42bc0af40a47993c3e59bed0028562.jpg"
     },
     {
       "id": "back-016",
@@ -72,16 +82,6 @@
       "name": "二月红接口",
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
-      "primary": false,
-      "sites_added": 40,
-      "sites_skipped": 0,
-      "spider": "http://47.120.41.246:8025/vip/jar/lubin.php"
-    },
-    {
-      "id": "back-026",
-      "name": "1号VIP源",
-      "group": "back",
-      "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
       "primary": false,
       "sites_added": 40,
       "sites_skipped": 0,
@@ -106,16 +106,6 @@
       "sites_added": 1,
       "sites_skipped": 1,
       "spider": "https://gitee.com/starlinkapi/jar/raw/master/jar/starlink.jar"
-    },
-    {
-      "id": "back-028",
-      "name": "ok线路2",
-      "group": "back",
-      "url": "https://gist.githubusercontent.com/ph7368/20ee6c7b64d77d82f8f4162cdd04ad61/raw/gistfile1.txt",
-      "primary": false,
-      "sites_added": 1,
-      "sites_skipped": 0,
-      "spider": "https://img2.gelonghui.com/library/e2693-9aa941a0-f96a-40c2-ac23-e6af358d19a7.png"
     }
   ],
   "subscribe": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",

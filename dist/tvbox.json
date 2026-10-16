@@ -1,6 +1,10 @@
 {
   "urls": [
     {
+      "url": "https://9280.kstore.vip/newwex.json",
+      "name": "王二小"
+    },
+    {
       "url": "http://home.jundie.top:81/top98.json",
       "name": "俊哥"
     },
@@ -23,6 +27,14 @@
     {
       "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
       "name": "潇洒"
+    },
+    {
+      "url": "https://9280.kstore.space/newwex.json",
+      "name": "牛二"
+    },
+    {
+      "url": "https://fty.888484.xyz/tv",
+      "name": "饭太硬备用"
     },
     {
       "url": "https://raw.liucn.cc/box/m.json",
@@ -74,5 +86,5 @@
     }
   ],
   "homepage": "https://www.tvbox.org/",
-  "generated_at": "2026-10-15T20:50:22Z"
+  "generated_at": "2026-10-16T02:41:40Z"
 }
