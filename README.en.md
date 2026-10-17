@@ -10,8 +10,14 @@
 - Home: <https://www.tvbox.org/>
 - Interfaces: <https://www.tvbox.org/portal.php>
 - Apps & downloads: <https://www.tvbox.org/>
+- Static site source: [`docs/`](./docs/) (lightweight homepage for GitHub Pages or your origin server)
 
-Prefer the official website for apps and guides. This repo focuses on **interface lists and availability probing**.
+Prefer the official website for apps and guides. This repo focuses on **interface lists and availability probing**. Preview locally:
+
+```bash
+python3 -m http.server 8080 --directory docs
+```
+
 
 ## Subscribe URLs (paste into TVBox)
 

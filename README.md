@@ -10,8 +10,13 @@
 - 网站首页：<https://www.tvbox.org/>
 - 接口页：<https://www.tvbox.org/portal.php>
 - 盒子软件与下载：<https://www.tvbox.org/>
+- 静态官网源码：[`docs/`](./docs/)（轻量首页，可发布到 GitHub Pages 或同步到官网服务器）
 
-请优先通过官网获取软件与说明；本仓库专注于**接口清单与可用性探测**。
+请优先通过官网获取软件与说明；本仓库专注于**接口清单与可用性探测**。本地预览静态首页：
+
+```bash
+python3 -m http.server 8080 --directory docs
+```
 
 ## 订阅地址（可直接填入 TVBox）
 
