@@ -1726,6 +1726,11 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
+      "ext": {
+        "site": [
+          "https://4kzn.cc"
+        ]
+      },
       "timeout": 60,
       "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
