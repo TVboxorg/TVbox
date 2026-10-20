@@ -21,6 +21,14 @@
       "name": "二月红接口"
     },
     {
+      "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
+      "name": "王二小接口"
+    },
+    {
+      "url": "http://tv.999888987.xyz",
+      "name": "王二小放牛娃"
+    },
+    {
       "url": "https://qist.wyfc.qzz.io/fty.json",
       "name": "饭太硬"
     },
@@ -33,10 +41,6 @@
       "name": "牛二"
     },
     {
-      "url": "https://fty.888484.xyz/tv",
-      "name": "饭太硬备用"
-    },
-    {
       "url": "https://raw.liucn.cc/box/m.json",
       "name": "ok线路1"
     },
@@ -47,6 +51,10 @@
     {
       "url": "http://124.223.214.31:8/api.json",
       "name": "my interface"
+    },
+    {
+      "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+      "name": "1号VIP源"
     },
     {
       "url": "http://47.96.82.41:5188/api.json",
@@ -82,5 +90,5 @@
     }
   ],
   "homepage": "https://www.tvbox.org/",
-  "generated_at": "2026-10-20T10:48:32Z"
+  "generated_at": "2026-10-20T16:10:43Z"
 }

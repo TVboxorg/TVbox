@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T10:48:46Z",
+  "generated_at": "2026-10-20T16:10:55Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
   "sites": 160,
   "parses": 49,
-  "lives": 24,
+  "lives": 23,
   "sources": [
     {
       "id": "pref-001",
@@ -96,16 +96,6 @@
       "sites_added": 7,
       "sites_skipped": 21,
       "spider": "https://tv.203511.xyz/jar/custom_spider.jar"
-    },
-    {
-      "id": "back-025",
-      "name": "my interface",
-      "group": "back",
-      "url": "http://124.223.214.31:8/api.json",
-      "primary": false,
-      "sites_added": 1,
-      "sites_skipped": 1,
-      "spider": "https://gitee.com/starlinkapi/jar/raw/master/jar/starlink.jar"
     }
   ],
   "subscribe": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",
