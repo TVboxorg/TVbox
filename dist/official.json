@@ -1278,42 +1278,6 @@
       ]
     },
     {
-      "key": "tv_back-026_feifan",
-      "name": "🍀┃非凡┃资源·1号VIP源",
-      "type": 1,
-      "api": "http://ffzy5.tv/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "categories": [
-        "韩国剧",
-        "欧美剧",
-        "台湾剧",
-        "战争片",
-        "国产剧",
-        "大陆综艺"
-      ],
-      "hide": 1
-    },
-    {
-      "key": "tv_back-026_ruyi",
-      "name": "🍀┃如意┃资源·1号VIP源",
-      "type": 1,
-      "api": "https://cj.rycjapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "categories": [
-        "韩国剧",
-        "欧美剧",
-        "台湾剧",
-        "战争片",
-        "国产剧",
-        "大陆综艺"
-      ],
-      "hide": 1
-    },
-    {
       "key": "tv_back-023_csp_小胡",
       "name": "👒┃小胡┃资源┃·ok线路1",
       "type": 1,
@@ -1543,21 +1507,40 @@
       "filterable": 1
     },
     {
-      "key": "tv_back-026_至臻",
-      "name": "💖┃至臻┃4K💖·1号VIP源",
-      "type": 3,
-      "api": "csp_PanWebShare",
+      "key": "tv_back-012_feifan",
+      "name": "🍀┃非凡┃资源·二月红接口",
+      "type": 1,
+      "api": "http://ffzy5.tv/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "changeable": 1,
-      "ext": {
-        "site": [
-          "http://103.231.12.104:22776"
-        ]
-      },
-      "hide": 1,
-      "jar": "http://47.120.41.246:8025/vip/jar/lubin.php"
+      "categories": [
+        "韩国剧",
+        "欧美剧",
+        "台湾剧",
+        "战争片",
+        "国产剧",
+        "大陆综艺"
+      ],
+      "hide": 1
+    },
+    {
+      "key": "tv_back-012_ruyi",
+      "name": "🍀┃如意┃资源·二月红接口",
+      "type": 1,
+      "api": "https://cj.rycjapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "categories": [
+        "韩国剧",
+        "欧美剧",
+        "台湾剧",
+        "战争片",
+        "国产剧",
+        "大陆综艺"
+      ],
+      "hide": 1
     },
     {
       "key": "tv_back-023_taopian",
@@ -1695,6 +1678,24 @@
           "https://woggpan.888484.xyz",
           "https://wogg.xxooo.cf",
           "https://woggpan.xxooo.cf"
+        ]
+      },
+      "timeout": 60,
+      "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
+    },
+    {
+      "key": "tv_back-017_快映",
+      "name": "快映 • 4K·潇洒",
+      "type": 3,
+      "api": "csp_PanWebShare",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "ext": {
+        "site": [
+          "http://xsayang.fun",
+          "http://38.76.197.172:12521"
         ]
       },
       "timeout": 60,
@@ -3073,10 +3074,6 @@
       "name": "16万•MV",
       "type": 0,
       "url": "https://gh.tryxd.cn/raw.githubusercontent.com/lystv/short/main/影视/tvb/MTV.txt"
-    },
-    {
-      "name": "直播源",
-      "type": 0
     }
   ],
   "homepage": "https://www.tvbox.org/",
