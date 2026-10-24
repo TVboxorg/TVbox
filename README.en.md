@@ -10,26 +10,34 @@
 - Home: <https://www.tvbox.org/>
 - Interfaces: <https://www.tvbox.org/portal.php>
 - Apps & downloads: <https://www.tvbox.org/>
+- Static site source: [`docs/index.html`](./docs/index.html) (~18KB single file, no external fonts/scripts; GitHub Pages or drop-in homepage)
 
-Prefer the official website for apps and guides. This repo focuses on **interface lists and availability probing**.
+Prefer the official website for apps and guides. This repo focuses on **interface lists and availability probing**. Preview locally:
+
+```bash
+python3 -m http.server 8080 --directory docs
+```
+
+
 
 ## Subscribe URLs (paste into TVBox)
 
 | Purpose | URL | Where to paste |
 | --- | --- | --- |
-| **Merged single config (recommended)** | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json` | Config / Interface |
-| Multi-repo list | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json` | Multi-repo / Store |
-| Full list + status | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/list.json` | View only |
+| **Merged single config (recommended)** | `https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/official.json` | Config / Interface |
+| Multi-repo list | `https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/tvbox.json` | Multi-repo / Store |
+| Full list + status | `https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/list.json` | View only |
 | Status table | [`dist/status.md`](./dist/status.md) | View only |
 
 `official.json` fetches working public sources and merges `sites` (CMS sources merge directly; CSP sources keep their original `jar` when possible) into one pasteable TVBox config.
 
-If GitHub raw is slow, try mirrors:
+jsDelivr is the default (faster in many regions). GitHub raw fallback:
 
 ```text
-https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/official.json
-https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/tvbox.json
+https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json
+https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json
 ```
+
 
 ## Repository layout
 
