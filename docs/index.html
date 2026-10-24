@@ -6,18 +6,329 @@
   <meta name="description" content="TVBox.org — 电视盒子开源官网。开源接口汇总、可用性探测与盒子软件入口。" />
   <meta name="theme-color" content="#e8eef5" />
   <title>TVBox.org — 电视盒子开源官网</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-  <link rel="preload" href="./fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f6e7a'/%3E%3Crect x='5' y='7' width='22' height='14' rx='2.5' stroke='%23e8f4f7' stroke-width='2' fill='none'/%3E%3Cpath d='M13.5 11.2v6.6L19.8 14.5 13.5 11.2Z' fill='%23e8f4f7'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --bg: #e8eef5;
+      --bg-deep: #d5e0ec;
+      --ink: #132033;
+      --muted: #4d6075;
+      --line: rgba(19, 32, 51, .12);
+      --accent: #0f6e7a;
+      --accent-ink: #094a52;
+      --surface: #f7fafc;
+      --header: #e8eef5;
+      --radius: 14px;
+      --font-display: "Avenir Next", "Segoe UI", "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif;
+      --font-body: "PingFang SC", "HarmonyOS Sans", "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+    html[data-theme="dark"] {
+      --bg: #0d141f;
+      --bg-deep: #081018;
+      --ink: #e7eef6;
+      --muted: #9aadc0;
+      --line: rgba(231, 238, 246, .12);
+      --accent: #3db8c5;
+      --accent-ink: #9ee0e8;
+      --surface: #121c2a;
+      --header: #0d141f;
+      color-scheme: dark;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font-body);
+      color: var(--ink);
+      background: linear-gradient(180deg, var(--bg), var(--bg-deep));
+      line-height: 1.6;
+    }
+    a { color: var(--accent-ink); text-underline-offset: .18em; }
+    a:hover { color: var(--accent); }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .92em;
+      word-break: break-all;
+    }
+    .shell { width: min(1080px, calc(100% - 2rem)); margin-inline: auto; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: var(--header);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      min-height: 3.5rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--ink);
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .brand-mark { color: var(--accent); display: grid; place-items: center; }
+    .brand-text {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.12rem;
+      letter-spacing: -.02em;
+    }
+    .brand-dot { color: var(--accent); }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-left: auto;
+      font-size: .95rem;
+    }
+    .nav a { color: var(--muted); text-decoration: none; }
+    .nav a:hover, .nav-github { color: var(--ink); }
+    .nav-github { font-weight: 600; }
+    .theme-toggle {
+      width: 2.3rem;
+      height: 2.3rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+    .theme-toggle-icon::before {
+      content: "";
+      width: .9rem;
+      height: .9rem;
+      border-radius: 50%;
+      box-shadow: inset -.28rem 0 0 .08rem currentColor;
+      display: block;
+    }
+    html[data-theme="dark"] .theme-toggle-icon::before {
+      box-shadow: none;
+      background: currentColor;
+      clip-path: polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+    }
+    .hero {
+      position: relative;
+      min-height: min(92svh, 780px);
+      display: grid;
+      align-items: end;
+      overflow: clip;
+      padding: 5rem 0 3.75rem;
+    }
+    .hero-visual {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 55% 45% at 72% 38%, rgba(61,184,197,.28), transparent 70%),
+        linear-gradient(135deg, #1a2433 0%, #0b1c2e 48%, #07111c 100%);
+    }
+    .hero-visual::after {
+      content: "TVBox";
+      position: absolute;
+      right: 6%;
+      top: 28%;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: clamp(4rem, 14vw, 8rem);
+      letter-spacing: -.05em;
+      color: rgba(232, 244, 247, .88);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .hero-visual::before {
+      content: "开源 · 接口 · 软件";
+      position: absolute;
+      right: 8%;
+      top: calc(28% + clamp(4.2rem, 15vw, 8.4rem));
+      color: #8eb8c4;
+      font-size: clamp(.9rem, 2vw, 1.15rem);
+      letter-spacing: .08em;
+      pointer-events: none;
+    }
+    .hero-veil {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 45%, var(--bg) 96%),
+        linear-gradient(90deg, var(--bg) 0%, rgba(232,238,245,.86) 30%, transparent 62%);
+      pointer-events: none;
+    }
+    html[data-theme="dark"] .hero-veil {
+      background:
+        linear-gradient(180deg, transparent 45%, var(--bg) 96%),
+        linear-gradient(90deg, var(--bg) 0%, rgba(13,20,31,.86) 30%, transparent 62%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 34rem;
+      margin-left: max(1rem, calc((100% - min(1080px, calc(100% - 2rem))) / 2));
+    }
+    .brand-lockup {
+      margin: 0 0 .55rem;
+      font-family: var(--font-display);
+      font-size: clamp(2.35rem, 7vw, 3.8rem);
+      font-weight: 800;
+      letter-spacing: -.04em;
+      line-height: 1;
+    }
+    .hero h1 {
+      margin: 0 0 .75rem;
+      font-size: clamp(1.45rem, 3.4vw, 2rem);
+      font-weight: 700;
+      letter-spacing: -.02em;
+      line-height: 1.25;
+    }
+    .hero-lead {
+      margin: 0 0 1.4rem;
+      color: var(--muted);
+      font-size: 1.02rem;
+      max-width: 28rem;
+    }
+    .hero-actions, .software-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      padding: .75rem 1.1rem;
+      font: inherit;
+      font-weight: 600;
+      font-size: .95rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-primary { background: var(--accent); color: #f4fcfd; }
+    .btn-primary:hover { background: var(--accent-ink); color: #fff; }
+    .btn-secondary {
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+    }
+    .btn-copy {
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+      white-space: nowrap;
+    }
+    .section { padding: 3.5rem 0; content-visibility: auto; contain-intrinsic-size: 1px 420px; }
+    .subscribe { content-visibility: visible; }
+    .section h2 {
+      margin: 0 0 .45rem;
+      font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+      letter-spacing: -.02em;
+    }
+    .section-lead { margin: 0 0 1.4rem; color: var(--muted); max-width: 38rem; }
+    .feed-list { display: grid; gap: .9rem; }
+    .feed {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.05rem 1.1rem .95rem;
+    }
+    .feed-meta h3 { margin: 0 0 .2rem; font-size: 1.02rem; }
+    .feed-meta p { margin: 0 0 .8rem; color: var(--muted); font-size: .93rem; }
+    .feed-row { display: flex; gap: .6rem; align-items: stretch; }
+    .feed-url {
+      flex: 1;
+      display: block;
+      padding: .65rem .8rem;
+      border-radius: 10px;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      overflow-wrap: anywhere;
+    }
+    .feed-mirror { margin: .65rem 0 0; color: var(--muted); font-size: .84rem; }
+    .pillar-grid {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem 1.75rem;
+    }
+    .pillar-grid h3 { margin: 0 0 .35rem; font-size: 1.02rem; }
+    .pillar-grid p { margin: 0; color: var(--muted); }
+    .software {
+      border-block: 1px solid var(--line);
+      background: color-mix(in srgb, var(--surface) 75%, transparent);
+    }
+    .site-footer {
+      border-top: 1px solid var(--line);
+      padding: 1.75rem 0 2.25rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem 1.4rem;
+      justify-content: space-between;
+    }
+    .footer-inner p { margin: 0; }
+    .footer-inner a { color: var(--muted); text-decoration: none; }
+    .footer-inner a:hover { color: var(--ink); }
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 1.25rem;
+      transform: translateX(-50%);
+      background: var(--ink);
+      color: var(--bg);
+      padding: .5rem .85rem;
+      border-radius: 999px;
+      font-size: .86rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .16s ease;
+      z-index: 50;
+    }
+    .toast.is-on { opacity: 1; }
+    @media (max-width: 860px) {
+      .pillar-grid { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding: 4rem 0 2.75rem; }
+      .hero-content { max-width: none; margin-left: auto; width: min(1080px, calc(100% - 2rem)); }
+      .hero-visual::after, .hero-visual::before { opacity: .55; }
+    }
+    @media (max-width: 640px) {
+      .nav a:not(.nav-github) { display: none; }
+      .feed-row { flex-direction: column; }
+      .hero-veil {
+        background:
+          linear-gradient(180deg, rgba(232,238,245,.25) 0%, var(--bg) 78%),
+          linear-gradient(90deg, rgba(232,238,245,.55), transparent);
+      }
+      html[data-theme="dark"] .hero-veil {
+        background:
+          linear-gradient(180deg, rgba(13,20,31,.35) 0%, var(--bg) 78%),
+          linear-gradient(90deg, rgba(13,20,31,.6), transparent);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .toast { transition: none; }
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳到主要内容</a>
-
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="./" aria-label="TVBox.org 首页">
         <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+          <svg viewBox="0 0 32 32" width="26" height="26" fill="none">
             <rect x="2" y="4" width="28" height="20" rx="3" stroke="currentColor" stroke-width="2" />
             <path d="M13 10.5v9l8-4.5-8-4.5Z" fill="currentColor" />
             <path d="M10 28h12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -39,37 +350,7 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-visual" aria-hidden="true">
-        <svg class="hero-screen" viewBox="0 0 1200 720" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="bezel" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#1a2433" />
-              <stop offset="100%" stop-color="#0d141f" />
-            </linearGradient>
-            <linearGradient id="glass" x1="0.2" y1="0" x2="0.8" y2="1">
-              <stop offset="0%" stop-color="#16324f" />
-              <stop offset="55%" stop-color="#0b1c2e" />
-              <stop offset="100%" stop-color="#07111c" />
-            </linearGradient>
-            <radialGradient id="glow" cx="50%" cy="42%" r="45%">
-              <stop offset="0%" stop-color="#3db8c5" stop-opacity="0.45" />
-              <stop offset="55%" stop-color="#1a6f8a" stop-opacity="0.18" />
-              <stop offset="100%" stop-color="#0b1c2e" stop-opacity="0" />
-            </radialGradient>
-          </defs>
-          <rect width="1200" height="720" fill="url(#bezel)" />
-          <rect x="48" y="36" width="1104" height="580" rx="18" fill="url(#glass)" />
-          <rect x="48" y="36" width="1104" height="580" rx="18" fill="url(#glow)" class="screen-glow" />
-          <g class="screen-copy" fill="#e8f4f7">
-            <text x="600" y="290" text-anchor="middle" font-family="Outfit, sans-serif" font-size="92" font-weight="800">TVBox</text>
-            <text x="600" y="350" text-anchor="middle" font-family="Noto Sans SC, sans-serif" font-size="28" fill="#8eb8c4">开源 · 接口 · 软件</text>
-          </g>
-          <rect x="520" y="660" width="160" height="18" rx="4" fill="#2a3545" />
-          <rect x="420" y="690" width="360" height="10" rx="3" fill="#1c2533" />
-        </svg>
-        <div class="hero-veil"></div>
-      </div>
-
+      <div class="hero-visual" aria-hidden="true"><div class="hero-veil"></div></div>
       <div class="shell hero-content">
         <p class="brand-lockup">TVBox.org</p>
         <h1 id="hero-title">电视盒子开源官网</h1>
@@ -84,8 +365,7 @@
     <section class="section subscribe" id="subscribe" aria-labelledby="subscribe-title">
       <div class="shell">
         <h2 id="subscribe-title">订阅地址</h2>
-        <p class="section-lead">复制后填入 TVBox「配置地址 / 接口」。国内访问 raw 较慢时可用镜像。</p>
-
+        <p class="section-lead">复制后填入 TVBox「配置地址 / 接口」。默认使用 jsDelivr 镜像，国内更快；也可换 GitHub raw。</p>
         <div class="feed-list" role="list">
           <article class="feed" role="listitem">
             <div class="feed-meta">
@@ -93,28 +373,27 @@
               <p>跨线路拼合可用站点，可直接粘贴使用。</p>
             </div>
             <div class="feed-row">
-              <code class="feed-url" id="urlOfficial">https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json</code>
+              <code class="feed-url" id="urlOfficial">https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/official.json</code>
               <button type="button" class="btn btn-copy" data-copy="#urlOfficial">复制</button>
             </div>
-            <p class="feed-mirror">镜像：<code>https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/official.json</code></p>
+            <p class="feed-mirror">GitHub raw：<code>https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json</code></p>
           </article>
-
           <article class="feed" role="listitem">
             <div class="feed-meta">
               <h3>多仓列表</h3>
               <p>用于「多仓 / 仓库」模式，按线路切换。</p>
             </div>
             <div class="feed-row">
-              <code class="feed-url" id="urlTvbox">https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json</code>
+              <code class="feed-url" id="urlTvbox">https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/tvbox.json</code>
               <button type="button" class="btn btn-copy" data-copy="#urlTvbox">复制</button>
             </div>
-            <p class="feed-mirror">镜像：<code>https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/tvbox.json</code></p>
+            <p class="feed-mirror">GitHub raw：<code>https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json</code></p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section pillars" aria-labelledby="pillars-title">
+    <section class="section" aria-labelledby="pillars-title">
       <div class="shell">
         <h2 id="pillars-title">官网提供什么</h2>
         <p class="section-lead">聚焦接口汇总与探测，不托管、不分发影视内容。</p>
@@ -146,7 +425,7 @@
       </div>
     </section>
 
-    <section class="section note" aria-labelledby="note-title">
+    <section class="section" aria-labelledby="note-title">
       <div class="shell">
         <h2 id="note-title">使用说明</h2>
         <p class="section-lead">接口由第三方维护，可用性会变化；探测结果仅供参考。请遵守当地法律法规与平台条款。</p>
@@ -159,15 +438,60 @@
       <p><strong>TVBox.org</strong> · 电视盒子开源官网</p>
       <p>
         <a href="https://github.com/TVboxorg/TVbox" rel="noopener">GitHub</a>
-        <span aria-hidden="true">·</span>
+        ·
         <a href="https://www.tvbox.org/portal.php" rel="noopener">社区</a>
-        <span aria-hidden="true">·</span>
-        <a href="https://github.com/TVboxorg/TVbox/blob/main/dist/status.md" rel="noopener">探测状态</a>
+        ·
+        <a href="https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/status.md" rel="noopener">探测状态</a>
       </p>
     </div>
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite" hidden>已复制</div>
-  <script src="./app.js" defer></script>
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const toast = document.getElementById("toast");
+      const key = "tvbox-theme";
+      const apply = (t) => t === "dark" ? root.setAttribute("data-theme", "dark") : root.removeAttribute("data-theme");
+      const saved = localStorage.getItem(key);
+      if (saved === "dark" || saved === "light") apply(saved);
+      document.getElementById("themeToggle")?.addEventListener("click", () => {
+        const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        apply(next);
+        localStorage.setItem(key, next);
+      });
+      let timer = 0;
+      const show = (msg) => {
+        if (!toast) return;
+        toast.textContent = msg;
+        toast.hidden = false;
+        toast.classList.add("is-on");
+        clearTimeout(timer);
+        timer = setTimeout(() => toast.classList.remove("is-on"), 1200);
+      };
+      document.querySelectorAll("[data-copy]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const el = document.querySelector(btn.getAttribute("data-copy"));
+          const text = el?.textContent?.trim();
+          if (!text) return;
+          const old = btn.textContent;
+          try {
+            await navigator.clipboard.writeText(text);
+            btn.textContent = "已复制";
+            show("已复制订阅地址");
+          } catch {
+            const r = document.createRange();
+            r.selectNodeContents(el);
+            const s = getSelection();
+            s?.removeAllRanges();
+            s?.addRange(r);
+            btn.textContent = "请手动复制";
+            show("请手动复制选中内容");
+          }
+          setTimeout(() => { btn.textContent = old; }, 1400);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

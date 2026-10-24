@@ -10,7 +10,7 @@
 - 网站首页：<https://www.tvbox.org/>
 - 接口页：<https://www.tvbox.org/portal.php>
 - 盒子软件与下载：<https://www.tvbox.org/>
-- 静态官网源码：[`docs/`](./docs/)（轻量首页，可发布到 GitHub Pages 或同步到官网服务器）
+- 静态官网源码：[`docs/index.html`](./docs/index.html)（约 18KB 单文件，无外链字体/脚本；可发布到 GitHub Pages 或直接覆盖官网首页）
 
 请优先通过官网获取软件与说明；本仓库专注于**接口清单与可用性探测**。本地预览静态首页：
 
@@ -18,23 +18,25 @@
 python3 -m http.server 8080 --directory docs
 ```
 
+
 ## 订阅地址（可直接填入 TVBox）
 
 | 用途 | 地址 | 填哪里 |
 | --- | --- | --- |
-| **单仓聚合（推荐直用）** | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json` | 「配置地址 / 接口」 |
-| 多仓列表 | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json` | 「多仓 / 仓库」 |
-| 完整列表（含状态） | `https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/list.json` | 仅查看 |
+| **单仓聚合（推荐直用）** | `https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/official.json` | 「配置地址 / 接口」 |
+| 多仓列表 | `https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/tvbox.json` | 「多仓 / 仓库」 |
+| 完整列表（含状态） | `https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/list.json` | 仅查看 |
 | 可读状态表 | [`dist/status.md`](./dist/status.md) | 仅查看 |
 
 `official.json` 会自动拉取探测可用的公开线路，跨源拼合 `sites`（标准 CMS 源直接合并；CSP 源尽量带上原线路 `jar`），生成一份可粘贴进 TVBox 的配置。
 
-国内若 raw 较慢，可尝试镜像：
+国内默认使用 jsDelivr；若需 GitHub raw：
 
 ```text
-https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/official.json
-https://cdn.jsdelivr.net/gh/TVboxorg/TVbox@main/dist/tvbox.json
+https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json
+https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/tvbox.json
 ```
+
 
 ## 仓库内容
 
