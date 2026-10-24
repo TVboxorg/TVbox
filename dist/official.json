@@ -1720,6 +1720,17 @@
       "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
     {
+      "key": "tv_back-017_搬运",
+      "name": "搬运 • 4K·潇洒",
+      "type": 3,
+      "api": "csp_BanYunDao",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 60,
+      "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
+    },
+    {
       "key": "tv_back-017_指南",
       "name": "指南 • 4K·潇洒",
       "type": 3,
@@ -1959,20 +1970,6 @@
       "name": "双星 • 4K·潇洒",
       "type": 3,
       "api": "csp_ShuangXing",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "style": {
-        "type": "list"
-      },
-      "timeout": 60,
-      "jar": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
-    },
-    {
-      "key": "tv_back-017_卡卡",
-      "name": "卡卡 • 4K·潇洒",
-      "type": 3,
-      "api": "csp_KKPan",
       "searchable": 1,
       "quickSearch": 0,
       "filterable": 0,
