@@ -21,10 +21,6 @@
       "name": "二月红接口"
     },
     {
-      "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
-      "name": "王二小接口"
-    },
-    {
       "url": "http://tv.999888987.xyz",
       "name": "王二小放牛娃"
     },
@@ -39,10 +35,6 @@
     {
       "url": "https://9280.kstore.space/newwex.json",
       "name": "牛二"
-    },
-    {
-      "url": "https://fty.888484.xyz/tv",
-      "name": "饭太硬备用"
     },
     {
       "url": "https://raw.liucn.cc/box/m.json",
@@ -77,10 +69,6 @@
       "name": "摸鱼儿"
     },
     {
-      "url": "http://www.xn--sss604efuw.net/tv",
-      "name": "sss公用源"
-    },
-    {
       "url": "https://9280.kstore.space/wex.json",
       "name": "牛儿"
     },
@@ -102,5 +90,5 @@
     }
   ],
   "homepage": "https://www.tvbox.org/",
-  "generated_at": "2026-10-24T20:04:28Z"
+  "generated_at": "2026-10-25T02:44:56Z"
 }
