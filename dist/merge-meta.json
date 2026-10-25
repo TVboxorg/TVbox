@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T10:31:59Z",
+  "generated_at": "2026-10-25T15:24:15Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -83,7 +83,7 @@
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
       "primary": false,
-      "sites_added": 39,
+      "sites_added": 38,
       "sites_skipped": 0,
       "spider": "http://47.120.41.246:8025/vip/jar/lubin.php"
     },
