@@ -21,10 +21,6 @@
       "name": "二月红接口"
     },
     {
-      "url": "http://tv.999888987.xyz",
-      "name": "王二小放牛娃"
-    },
-    {
       "url": "https://qist.wyfc.qzz.io/fty.json",
       "name": "饭太硬"
     },
@@ -35,6 +31,10 @@
     {
       "url": "https://9280.kstore.space/newwex.json",
       "name": "牛二"
+    },
+    {
+      "url": "https://fty.888484.xyz/tv",
+      "name": "饭太硬备用"
     },
     {
       "url": "https://raw.liucn.cc/box/m.json",
@@ -90,5 +90,5 @@
     }
   ],
   "homepage": "https://www.tvbox.org/",
-  "generated_at": "2026-10-25T02:44:56Z"
+  "generated_at": "2026-10-25T10:31:51Z"
 }
