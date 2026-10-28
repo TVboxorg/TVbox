@@ -21,6 +21,10 @@
       "name": "二月红接口"
     },
     {
+      "url": "http://tvbox.xn--4kq62z5rby2qupq9ub.top/",
+      "name": "王二小接口"
+    },
+    {
       "url": "https://qist.wyfc.qzz.io/fty.json",
       "name": "饭太硬"
     },
@@ -86,5 +90,5 @@
     }
   ],
   "homepage": "https://www.tvbox.org/",
-  "generated_at": "2026-10-27T21:42:03Z"
+  "generated_at": "2026-10-28T03:32:18Z"
 }
