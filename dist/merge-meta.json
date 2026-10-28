@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T11:58:00Z",
+  "generated_at": "2026-10-28T17:56:09Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -78,12 +78,22 @@
       "spider": "https://qist.wyfc.qzz.io/jar/fan.txt"
     },
     {
+      "id": "back-024",
+      "name": "荐片",
+      "group": "back",
+      "url": "https://tv.203511.xyz/0821.json",
+      "primary": false,
+      "sites_added": 7,
+      "sites_skipped": 21,
+      "spider": "https://tv.203511.xyz/jar/custom_spider.jar"
+    },
+    {
       "id": "back-012",
       "name": "二月红接口",
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
       "primary": false,
-      "sites_added": 30,
+      "sites_added": 24,
       "sites_skipped": 0,
       "spider": "http://47.120.41.246:8025/vip/jar/tan.php"
     },
@@ -93,19 +103,9 @@
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
       "primary": false,
-      "sites_added": 29,
+      "sites_added": 24,
       "sites_skipped": 0,
       "spider": "http://47.120.41.246:8025/vip/jar/tan.php"
-    },
-    {
-      "id": "back-024",
-      "name": "荐片",
-      "group": "back",
-      "url": "https://tv.203511.xyz/0821.json",
-      "primary": false,
-      "sites_added": 7,
-      "sites_skipped": 21,
-      "spider": "https://tv.203511.xyz/jar/custom_spider.jar"
     },
     {
       "id": "back-025",
