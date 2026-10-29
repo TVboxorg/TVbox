@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-29T03:53:57Z",
+  "generated_at": "2026-10-29T12:07:03Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
   "sites": 160,
-  "parses": 49,
-  "lives": 24,
+  "parses": 38,
+  "lives": 23,
   "sources": [
     {
       "id": "pref-001",
@@ -26,16 +26,6 @@
       "sites_added": 50,
       "sites_skipped": 4,
       "spider": "http://xhztv.top/xhz/Yoursmile.jar"
-    },
-    {
-      "id": "pref-006",
-      "name": "俊哥",
-      "group": "pref",
-      "url": "http://home.jundie.top:81/top98.json",
-      "primary": false,
-      "sites_added": 22,
-      "sites_skipped": 2,
-      "spider": "http://home.jundie.top:81/jar/top98_1.jar"
     },
     {
       "id": "back-023",
@@ -93,17 +83,7 @@
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
       "primary": false,
-      "sites_added": 24,
-      "sites_skipped": 0,
-      "spider": "http://47.120.41.246:8025/vip/jar/tan.php"
-    },
-    {
-      "id": "back-026",
-      "name": "1号VIP源",
-      "group": "back",
-      "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
-      "primary": false,
-      "sites_added": 24,
+      "sites_added": 27,
       "sites_skipped": 0,
       "spider": "http://47.120.41.246:8025/vip/jar/tan.php"
     },
