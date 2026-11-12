@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-11T23:56:24Z",
+  "generated_at": "2026-11-12T05:35:02Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
   "sites": 160,
-  "parses": 49,
-  "lives": 23,
+  "parses": 48,
+  "lives": 14,
   "sources": [
     {
       "id": "pref-001",
@@ -53,7 +53,7 @@
       "group": "back",
       "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
       "primary": false,
-      "sites_added": 113,
+      "sites_added": 114,
       "sites_skipped": 2,
       "spider": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
@@ -86,16 +86,6 @@
       "sites_added": 31,
       "sites_skipped": 0,
       "spider": "http://118.89.172.248:8025/jar/tan.php"
-    },
-    {
-      "id": "back-024",
-      "name": "荐片",
-      "group": "back",
-      "url": "https://tv.203511.xyz/0821.json",
-      "primary": false,
-      "sites_added": 7,
-      "sites_skipped": 21,
-      "spider": "https://tv.203511.xyz/jar/custom_spider.jar"
     }
   ],
   "subscribe": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",
