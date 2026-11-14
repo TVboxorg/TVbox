@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-14T04:30:31Z",
+  "generated_at": "2026-11-14T12:50:30Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
   "sites": 160,
   "parses": 49,
-  "lives": 22,
+  "lives": 23,
   "sources": [
     {
       "id": "pref-001",
@@ -53,7 +53,7 @@
       "group": "back",
       "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
       "primary": false,
-      "sites_added": 113,
+      "sites_added": 114,
       "sites_skipped": 2,
       "spider": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
@@ -73,7 +73,7 @@
       "group": "back",
       "url": "https://qist.wyfc.qzz.io/fty.json",
       "primary": false,
-      "sites_added": 45,
+      "sites_added": 46,
       "sites_skipped": 3,
       "spider": "https://qist.wyfc.qzz.io/jar/fan.txt"
     },

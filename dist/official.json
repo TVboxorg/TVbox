@@ -2990,6 +2990,14 @@
       "ua": "okHttp/Mod-1.5.0.0"
     },
     {
+      "name": "YY轮播",
+      "type": 0,
+      "url": "https://sub.ottiptv.cc/yylunbo.m3u",
+      "playerType": 2,
+      "timeout": 10,
+      "ua": "okHttp/Mod-1.5.0.0"
+    },
+    {
       "name": "平台直播",
       "type": 0,
       "url": "http://118.89.172.248:8025/jar/zb.php",
