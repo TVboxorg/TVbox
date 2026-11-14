@@ -73,6 +73,10 @@
       "name": "摸鱼儿"
     },
     {
+      "url": "http://www.xn--sss604efuw.net/tv",
+      "name": "sss公用源"
+    },
+    {
       "url": "https://9280.kstore.space/wex.json",
       "name": "牛儿"
     },
@@ -94,5 +98,5 @@
     }
   ],
   "homepage": "https://www.tvbox.org/",
-  "generated_at": "2026-11-14T12:50:24Z"
+  "generated_at": "2026-11-14T21:53:46Z"
 }
