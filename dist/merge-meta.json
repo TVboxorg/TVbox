@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-20T14:45:22Z",
+  "generated_at": "2026-11-20T23:34:11Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
   "sites": 160,
-  "parses": 48,
-  "lives": 14,
+  "parses": 49,
+  "lives": 22,
   "sources": [
     {
       "id": "pref-001",
@@ -15,7 +15,7 @@
       "primary": true,
       "sites_added": 100,
       "sites_skipped": 0,
-      "spider": "http://oss4liview.moji.com/thd_file/2026/11/17/ff5af105e608d6389b89d59586515c70.jpg"
+      "spider": "http://oss4liview.moji.com/thd_file/2026/11/21/b739e258520d1aefa13a1444ee39ef0d.jpg"
     },
     {
       "id": "pref-007",
@@ -65,7 +65,7 @@
       "primary": false,
       "sites_added": 100,
       "sites_skipped": 0,
-      "spider": "http://oss4liview.moji.com/thd_file/2026/11/17/ff5af105e608d6389b89d59586515c70.jpg"
+      "spider": "http://oss4liview.moji.com/thd_file/2026/11/21/b739e258520d1aefa13a1444ee39ef0d.jpg"
     },
     {
       "id": "back-016",
@@ -76,6 +76,16 @@
       "sites_added": 46,
       "sites_skipped": 3,
       "spider": "https://qist.wyfc.qzz.io/jar/fan.txt"
+    },
+    {
+      "id": "back-024",
+      "name": "荐片",
+      "group": "back",
+      "url": "https://tv.203511.xyz/0821.json",
+      "primary": false,
+      "sites_added": 15,
+      "sites_skipped": 21,
+      "spider": "https://tv.203511.xyz/jar/fan.txt"
     },
     {
       "id": "back-012",
