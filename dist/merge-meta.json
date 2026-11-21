@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T14:01:07Z",
+  "generated_at": "2026-11-21T22:40:44Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -15,7 +15,7 @@
       "primary": true,
       "sites_added": 100,
       "sites_skipped": 0,
-      "spider": "http://oss4liview.moji.com/thd_file/2026/11/21/b739e258520d1aefa13a1444ee39ef0d.jpg"
+      "spider": "http://oss4liview.moji.com/thd_file/2026/11/21/2eca9460132ba7940a5098877c187e1a.jpg"
     },
     {
       "id": "pref-007",
@@ -65,7 +65,7 @@
       "primary": false,
       "sites_added": 100,
       "sites_skipped": 0,
-      "spider": "http://oss4liview.moji.com/thd_file/2026/11/21/b739e258520d1aefa13a1444ee39ef0d.jpg"
+      "spider": "http://oss4liview.moji.com/thd_file/2026/11/21/2eca9460132ba7940a5098877c187e1a.jpg"
     },
     {
       "id": "back-016",
@@ -96,6 +96,16 @@
       "sites_added": 31,
       "sites_skipped": 0,
       "spider": "http://118.89.172.248:8025/jar/tan2.php"
+    },
+    {
+      "id": "back-026",
+      "name": "1号VIP源",
+      "group": "back",
+      "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
+      "primary": false,
+      "sites_added": 31,
+      "sites_skipped": 0,
+      "spider": "http://118.89.172.248:8025/jar/tan.php"
     },
     {
       "id": "back-025",
