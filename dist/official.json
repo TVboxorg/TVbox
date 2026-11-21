@@ -1747,8 +1747,8 @@
       "filterable": 1,
       "ext": {
         "site": [
-          "https://www.hdmoli.com",
-          "https://www.hdmoli.pro"
+          "https://www.hdmoli.me",
+          "https://www.hdmoli.org"
         ]
       },
       "timeout": 60,
@@ -1933,10 +1933,9 @@
       "quickSearch": 0,
       "ext": {
         "site": [
-          "https://sidhub.cc",
+          "https://seedog.cc",
           "https://seeduck.cc",
-          "https://hubdog.cc",
-          "http://104.243.25.80"
+          "https://hubdog.cc"
         ]
       },
       "timeout": 60,
@@ -3057,6 +3056,10 @@
       "type": 0,
       "url": "http://rihou.cc:567/gggg.nzk",
       "playerType": 1
+    },
+    {
+      "name": "直播源",
+      "type": 0
     }
   ],
   "homepage": "https://www.tvbox.org/",

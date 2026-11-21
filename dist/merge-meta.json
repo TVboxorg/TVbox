@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-21T05:09:34Z",
+  "generated_at": "2026-11-21T14:01:07Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
   "sites": 160,
   "parses": 49,
-  "lives": 22,
+  "lives": 23,
   "sources": [
     {
       "id": "pref-001",
@@ -53,7 +53,7 @@
       "group": "back",
       "url": "https://qist.wyfc.qzz.io/xiaosa/api.json",
       "primary": false,
-      "sites_added": 117,
+      "sites_added": 114,
       "sites_skipped": 2,
       "spider": "https://qist.wyfc.qzz.io/xiaosa/spider.jar"
     },
@@ -96,6 +96,16 @@
       "sites_added": 31,
       "sites_skipped": 0,
       "spider": "http://118.89.172.248:8025/jar/tan2.php"
+    },
+    {
+      "id": "back-025",
+      "name": "my interface",
+      "group": "back",
+      "url": "http://124.223.214.31:8/api.json",
+      "primary": false,
+      "sites_added": 1,
+      "sites_skipped": 1,
+      "spider": "https://gitee.com/starlinkapi/jar/raw/master/jar/starlink.jar"
     }
   ],
   "subscribe": "https://raw.githubusercontent.com/TVboxorg/TVbox/main/dist/official.json",

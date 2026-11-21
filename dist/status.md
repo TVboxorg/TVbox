@@ -2,46 +2,46 @@
 
 - 官网：https://www.tvbox.org/
 - 仓库：https://github.com/TVboxorg/TVbox
-- 生成时间（UTC）：`2026-11-21T05:09:25Z`
-- 可用：**23** / 38
+- 生成时间（UTC）：`2026-11-21T14:00:44Z`
+- 可用：**22** / 38
 
 | 状态 | 分组 | 名称 | 耗时 | 说明 |
 | --- | --- | --- | --- | --- |
-| UP | pref | 王二小 | 655ms | 混合线路，以网盘(4K)为主，适合网盘VIP用户 |
-| DOWN | pref | 菜妮丝 | 457ms | 常规线路，推荐瓜子、金牌等线路 |
+| UP | pref | 王二小 | 323ms | 混合线路，以网盘(4K)为主，适合网盘VIP用户 |
+| DOWN | pref | 菜妮丝 | 12066ms | 常规线路，推荐瓜子、金牌等线路 |
 | DOWN | pref | 饭太硬 | 0ms | 混合线路，推荐荐片等线路 |
 | DOWN | pref | 肥猫 | 0ms | 混合线路，推荐肥猫、瓜子、金牌等线路 |
-| DOWN | pref | 少儿频道 | 850ms | 常规线路，启蒙、少儿、小/初/高 |
-| UP | pref | 俊哥 | 2466ms | 常规线路 |
-| UP | pref | 小盒子 | 624ms | 常规线路 |
-| DOWN | pref | 4k云盘接口 | 179ms | 混合线路，可用性较差 |
-| DOWN | pref | 无意云 | 331ms | 混合线路，若不用网盘的话可以选排序靠后的线路，画质较高 |
-| DOWN | pref | 欧歌接口 | 681ms | 常规影视线路 |
-| UP | back | 小盒子4K | 214ms | 4K高清线路 |
-| UP | back | 二月红接口 | 1908ms | 综合影视源 |
+| DOWN | pref | 少儿频道 | 915ms | 常规线路，启蒙、少儿、小/初/高 |
+| UP | pref | 俊哥 | 1845ms | 常规线路 |
+| UP | pref | 小盒子 | 158ms | 常规线路 |
+| DOWN | pref | 4k云盘接口 | 263ms | 混合线路，可用性较差 |
+| DOWN | pref | 无意云 | 681ms | 混合线路，若不用网盘的话可以选排序靠后的线路，画质较高 |
+| DOWN | pref | 欧歌接口 | 513ms | 常规影视线路 |
+| UP | back | 小盒子4K | 81ms | 4K高清线路 |
+| UP | back | 二月红接口 | 1682ms | 综合影视源 |
 | DOWN | back | 欧歌免费 | 0ms | 欧歌免费公用线路 |
-| UP | back | 王二小接口 | 836ms | 王二小备用线路 |
-| UP | back | 王二小放牛娃 | 467ms | 王二小网盘备用源 |
-| UP | back | 饭太硬 | 259ms | 混合线路，推荐荐片等线路 |
-| UP | back | 潇洒 | 94ms | 综合高清线路 |
-| UP | back | 牛二 | 674ms | 网盘4K混合线路 |
-| DOWN | back | uuccc | 1546ms | 通用影视线路 |
-| DOWN | back | fmys | 869ms | 综合聚合线路 |
-| DOWN | back | 饭太硬备用 | 578ms | 饭太硬备用访问地址 |
-| DOWN | back | 新接口 | 2028ms | 全新综合聚合源 |
-| UP | back | ok线路1 | 265ms | 稳定通用影视源 |
-| UP | back | 荐片 | 189ms | 荐片高清专用线路 |
-| UP | back | my interface | 477ms | 自建本地接口源 |
-| UP | back | 1号VIP源 | 4243ms | VIP付费影视线路 |
-| UP | back | 软件内置源 | 677ms | 本地端口服务接口 |
-| UP | back | ok线路2 | 140ms | Gist托管备用源 |
-| UP | back | 11号托管源 | 115ms | Github静态加速源 |
-| UP | back | 摸鱼儿 | 702ms | 鱼影视专用线路 |
-| DOWN | back | sss公用源 | 730ms | 长期稳定通用线路 |
-| UP | back | 牛儿 | 271ms | 牛二同站备用wex源 |
-| UP | back | 拾光 | 235ms | SVIP高清影视托管源 |
-| UP | back | 神秘大佬 | 260ms | Github加速聚合综合源 |
-| UP | back | 潇洒Github备用 | 172ms | 潇洒线路镜像加速地址 |
-| DOWN | back | 小苹果线路 | 139ms | Bitbucket托管苹果影视源 |
-| DOWN | back | 66号GitCode源 | 1296ms | 国内Gitee类静态影视接口 |
-| UP | back | 金鹰 | 1589ms | 金鹰影视专用聚合线路 |
+| UP | back | 王二小接口 | 769ms | 王二小备用线路 |
+| DOWN | back | 王二小放牛娃 | 12264ms | 王二小网盘备用源 |
+| UP | back | 饭太硬 | 137ms | 混合线路，推荐荐片等线路 |
+| UP | back | 潇洒 | 77ms | 综合高清线路 |
+| UP | back | 牛二 | 397ms | 网盘4K混合线路 |
+| DOWN | back | uuccc | 1475ms | 通用影视线路 |
+| DOWN | back | fmys | 772ms | 综合聚合线路 |
+| DOWN | back | 饭太硬备用 | 806ms | 饭太硬备用访问地址 |
+| DOWN | back | 新接口 | 4078ms | 全新综合聚合源 |
+| UP | back | ok线路1 | 130ms | 稳定通用影视源 |
+| UP | back | 荐片 | 99ms | 荐片高清专用线路 |
+| UP | back | my interface | 423ms | 自建本地接口源 |
+| UP | back | 1号VIP源 | 4321ms | VIP付费影视线路 |
+| UP | back | 软件内置源 | 622ms | 本地端口服务接口 |
+| UP | back | ok线路2 | 325ms | Gist托管备用源 |
+| UP | back | 11号托管源 | 96ms | Github静态加速源 |
+| UP | back | 摸鱼儿 | 534ms | 鱼影视专用线路 |
+| DOWN | back | sss公用源 | 707ms | 长期稳定通用线路 |
+| UP | back | 牛儿 | 492ms | 牛二同站备用wex源 |
+| UP | back | 拾光 | 101ms | SVIP高清影视托管源 |
+| UP | back | 神秘大佬 | 113ms | Github加速聚合综合源 |
+| UP | back | 潇洒Github备用 | 149ms | 潇洒线路镜像加速地址 |
+| DOWN | back | 小苹果线路 | 203ms | Bitbucket托管苹果影视源 |
+| DOWN | back | 66号GitCode源 | 2008ms | 国内Gitee类静态影视接口 |
+| UP | back | 金鹰 | 1763ms | 金鹰影视专用聚合线路 |
