@@ -1,0 +1,35 @@
+name: Deploy Cloudflare Pages
+
+# 把静态首页发布到 Cloudflare Pages（可绑 www.tvbox.org）。
+# 需要仓库 Secrets：
+#   CLOUDFLARE_API_TOKEN   — 含 Cloudflare Pages 编辑权限
+#   CLOUDFLARE_ACCOUNT_ID  — Cloudflare 账户 ID
+# 可选 Variables：
+#   CLOUDFLARE_PAGES_PROJECT — 默认 tvbox-org
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".github/workflows/cloudflare-pages.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    if: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish docs/ to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ vars.CLOUDFLARE_PAGES_PROJECT || 'tvbox-org' }}
+          directory: docs
+          branch: main
