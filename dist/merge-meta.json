@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T13:54:10Z",
+  "generated_at": "2026-11-22T23:05:43Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -13,9 +13,9 @@
       "group": "pref",
       "url": "https://9280.kstore.vip/newwex.json",
       "primary": true,
-      "sites_added": 100,
+      "sites_added": 99,
       "sites_skipped": 0,
-      "spider": "http://oss4liview.moji.com/thd_file/2026/11/21/2eca9460132ba7940a5098877c187e1a.jpg"
+      "spider": "http://oss4liview.moji.com/thd_file/2026/11/23/98f6124357b913bcb47d81339ca7725a.jpg"
     },
     {
       "id": "pref-007",
@@ -63,9 +63,9 @@
       "group": "back",
       "url": "https://9280.kstore.space/newwex.json",
       "primary": false,
-      "sites_added": 100,
+      "sites_added": 99,
       "sites_skipped": 0,
-      "spider": "http://oss4liview.moji.com/thd_file/2026/11/21/2eca9460132ba7940a5098877c187e1a.jpg"
+      "spider": "http://oss4liview.moji.com/thd_file/2026/11/23/98f6124357b913bcb47d81339ca7725a.jpg"
     },
     {
       "id": "back-016",

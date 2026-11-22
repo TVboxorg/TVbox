@@ -1,5 +1,5 @@
 {
-  "spider": "http://oss4liview.moji.com/thd_file/2026/11/21/2eca9460132ba7940a5098877c187e1a.jpg;md5;b7e2f9d16ff81dfe13853c6fff2e2b22",
+  "spider": "http://oss4liview.moji.com/thd_file/2026/11/23/98f6124357b913bcb47d81339ca7725a.jpg;md5;924547ec8b148216d7636beb3213b60e",
   "wallpaper": "https://www.loliapi.com/acg/",
   "logo": "https://storage.7x24cc.com/storage-server/presigned/ss1/a6-online-fileupload/newMediaFile/3CEAE9E_773_wexfnw_20250911190012684newMediaFile.gif",
   "sites": [
@@ -100,15 +100,6 @@
       "name": "💓蜡笔┃4K💓",
       "type": 3,
       "api": "csp_AiNewLaBiGuard",
-      "searchable": 1,
-      "quickSearch": 1,
-      "changeable": 0
-    },
-    {
-      "key": "AiNewShanDian",
-      "name": "💓闪电┃4K💓",
-      "type": 3,
-      "api": "csp_AiNewShanDianGuard",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 0
@@ -1957,6 +1948,16 @@
       "searchable": 1,
       "filterable": 1,
       "ext": "{\"site\":[\"http://118.89.172.248:22776\"],\"name\":\"网盘CMS\"}",
+      "jar": "http://118.89.172.248:8025/jar/tan.php"
+    },
+    {
+      "key": "tv_back-026_Star2",
+      "name": "💖┃剧透┃4K💖·1号VIP源",
+      "type": 3,
+      "api": "csp_Star2",
+      "searchable": 1,
+      "filterable": 0,
+      "ext": "{\"site\":[\"https://1.star2.cn\"],\"name\":\"剧透社\"}",
       "jar": "http://118.89.172.248:8025/jar/tan.php"
     }
   ],
