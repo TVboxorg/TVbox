@@ -1534,6 +1534,17 @@
       "filterable": 1
     },
     {
+      "key": "tv_back-026_hjzhencai",
+      "name": "💖┃花卷┃4K💖·1号VIP源",
+      "type": 3,
+      "api": "csp_HjZhenCai",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "{\"site\":\"https://www.hjzhencai.top,https://www.huanjuanwp.shop,https://www.aihuajuan.top\"}",
+      "jar": "http://118.89.172.248:8025/jar/tan.php"
+    },
+    {
       "key": "tv_back-023_taopian",
       "name": "🕹️淘片┃采集·ok线路1",
       "type": 1,
@@ -1946,16 +1957,6 @@
       "searchable": 1,
       "filterable": 1,
       "ext": "{\"site\":[\"http://118.89.172.248:22776\"],\"name\":\"网盘CMS\"}",
-      "jar": "http://118.89.172.248:8025/jar/tan.php"
-    },
-    {
-      "key": "tv_back-026_Star2",
-      "name": "💖┃剧透┃4K💖·1号VIP源",
-      "type": 3,
-      "api": "csp_Star2",
-      "searchable": 1,
-      "filterable": 0,
-      "ext": "{\"site\":[\"https://1.star2.cn\"],\"name\":\"剧透社\"}",
       "jar": "http://118.89.172.248:8025/jar/tan.php"
     }
   ],

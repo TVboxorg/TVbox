@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T04:35:12Z",
+  "generated_at": "2026-11-22T13:54:10Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -73,7 +73,7 @@
       "group": "back",
       "url": "https://qist.wyfc.qzz.io/fty.json",
       "primary": false,
-      "sites_added": 46,
+      "sites_added": 47,
       "sites_skipped": 3,
       "spider": "https://qist.wyfc.qzz.io/jar/fan.txt"
     },
@@ -93,9 +93,9 @@
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
       "primary": false,
-      "sites_added": 31,
+      "sites_added": 33,
       "sites_skipped": 0,
-      "spider": "http://118.89.172.248:8025/jar/tan2.php"
+      "spider": "http://118.89.172.248:8025/jar/tan.php"
     },
     {
       "id": "back-026",
@@ -103,7 +103,7 @@
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
       "primary": false,
-      "sites_added": 31,
+      "sites_added": 33,
       "sites_skipped": 0,
       "spider": "http://118.89.172.248:8025/jar/tan.php"
     },
