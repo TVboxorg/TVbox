@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T00:57:04Z",
+  "generated_at": "2026-11-28T14:54:22Z",
   "homepage": "https://www.tvbox.org/",
   "repo": "https://github.com/TVboxorg/TVbox",
   "primary": "王二小",
@@ -93,17 +93,7 @@
       "group": "back",
       "url": "https://700sjro44343.vicp.fun/eggp/0211/tv.json",
       "primary": false,
-      "sites_added": 33,
-      "sites_skipped": 0,
-      "spider": "http://118.89.172.248:8025/jar/tan.php"
-    },
-    {
-      "id": "back-026",
-      "name": "1号VIP源",
-      "group": "back",
-      "url": "https://700sjro44343.vicp.fun/vip/vip/tv.json",
-      "primary": false,
-      "sites_added": 33,
+      "sites_added": 34,
       "sites_skipped": 0,
       "spider": "http://118.89.172.248:8025/jar/tan.php"
     },
